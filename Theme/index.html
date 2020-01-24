@@ -20,7 +20,24 @@
 
     <!-- Custom styles for this template -->
     <link href="css/resume.min.css" rel="stylesheet">
+    <style>
+        .btn-primary,
+        .btn-primary:active,
+        .btn-primary:visited {
+            background-color: #2b882e !important;
+            border-color: #2b882e;
+        }
 
+        .btn-primary:hover {
+            background-color: #1b561d !important;
+            border-color: #1b561d;
+            transition: all 1s ease;
+            -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+        }
+    </style>
 </head>
 
 <body id="page-top">
@@ -39,31 +56,31 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                <a class="nav-link js-scroll-trigger" href="#about">ABOUT</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#publications">Publications</a>
+                <a class="nav-link js-scroll-trigger" href="#publications">PUBLICATIONS</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+                <a class="nav-link js-scroll-trigger" href="#projects">PROJECTS</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+                <a class="nav-link js-scroll-trigger" href="#experience">EXPERIENCE</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+                <a class="nav-link js-scroll-trigger" href="#education">EDUCATION</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#courses">Courses</a>
+                <a class="nav-link js-scroll-trigger" href="#courses">COURSES</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+                <a class="nav-link js-scroll-trigger" href="#skills">SKILLS</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#recommendations">Recommendations</a>
+                <a class="nav-link js-scroll-trigger" href="#recommendations">RECOMMENDATIONS</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+                <a class="nav-link js-scroll-trigger" href="#interests">INTERESTS</a>
             </li>
         </ul>
     </div>
@@ -111,17 +128,47 @@
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="publications">
         <div class="w-100">
-            <h3 class="mb-5">A Girl Has No Name: Automated Authorship Obfuscation using
-                <span class="text-primary">Mutant-X</span>
+            <h3 class="mb-0">A Girl Has No Name: Automated Authorship Obfuscation using Mutant-X
+                (<span class="text-primary">PoPETs 2019</span>)
             </h3>
-            <div class="container_row" style="display: grid;">
-                <div style="grid-column: 1;grid-row: 1;">
-                    <img src="img/monitor.png" alt="" height="350px" width="400px" style="max-width: 100%;height: auto;">
-                </div>
-                <div style="grid-column: 1;grid-row: 1;">
-                    More lorem ipsum...
+            <p class="lead mb-5"><span class="text-primary"><b>Asad Mahmood</b></span>, Faizan Ahmed, Zubair Shafiq,
+                Padmini Srinivasan and Fareed Zaffar</p>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="container_row" style="display: grid;">
+                            <div style="grid-column: 1;grid-row: 1;">
+                                <img src="img/monitor.png" alt="" height="420px" width="470px"
+                                     style="max-width: 100%;height: auto;">
+                            </div>
+                            <div style="grid-column: 1;grid-row: 1;">
+                                More lorem ipsum...
+                            </div>
+                        </div>
+                        <div class="text-center">
+
+                                <button type="button" class="btn btn-primary">Paper</button>
+                                <button type="button" class="btn btn-primary">Code</button>
+                                <button type="button" class="btn btn-primary">Slides</button>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <p class="lead mb-5">Stylometric authorship attribution aims to
+                            identify an anonymous or disputed document’s author
+                            by examining its writing style. The development of
+                            powerful machine learning based stylometric authorship
+                            attribution methods presents a serious privacy threat
+                            for individuals such as journalists and activists who
+                            wish to publish anonymously. Researchers have proposed several authorship obfuscation
+                            approaches that
+                            try to make appropriate changes (e.g. word/phrase replacements) to evade attribution while
+                            preserving semantics.</p>
+                    </div>
                 </div>
             </div>
+
         </div>
     </section>
 
