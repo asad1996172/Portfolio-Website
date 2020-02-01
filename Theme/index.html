@@ -38,6 +38,18 @@
             -ms-transition: all 1s ease;
         }
 
+        .carousel-indicators li {
+            background-color: #10994c;
+            background-color: rgba(1, 70, 7, 0.25);
+        }
+
+        .carousel-indicators .active {
+            background-color: #0c4419;
+        }
+
+        .carousel-control-next-icon{
+            filter: invert(1);
+        }
 
     </style>
 </head>
@@ -138,8 +150,50 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div><h3> Recent News </h3><img src="img/tv_icon.png" alt=""
-                                                         style="max-width: 100%;height: auto;"></div>
+
+                        <div>
+                            <h3 class="text-primary"> Highlights
+                            </h3>
+                        </div>
+                        <div class="entry-content"
+                             style="overflow-y: scroll; height:500px; width: auto; background-image: linear-gradient(rgba(255,255,0,0), rgba(0,255,48,0.29), rgba(0,255,48,0.02));">
+                            <ul>
+                                <li><span class="text-primary" style="font-weight: bold;">SEPT 2019: </span> Achieved
+                                    6th position out of 55 submissions at PAN 2019, for model detecting Humans vs Bots
+                                    on Twitter.
+                                </li>
+                                <li><span class="text-primary" style="font-weight: bold;">JUL 2019: </span> Presented
+                                    our paper at PoPETs in Stockholm, Sweden.
+                                </li>
+                                <li><span class="text-primary" style="font-weight: bold;">JUN 2019: </span> Our paper
+                                    titled "A Girl Has No Name: Automated Authorship
+                                    Obfuscation using Mutant-X" got published in PoPETs.
+                                </li>
+                                <li><span class="text-primary" style="font-weight: bold;">AUG 2018: </span> Joined The
+                                    University of Iowa for PhD in Computer Science.
+                                </li>
+                                <li><span class="text-primary" style="font-weight: bold;">MAY 2018: </span> Graduated
+                                    from FAST NU (Lahore Campus).
+                                </li>
+                                <li><span class="text-primary" style="font-weight: bold;">AUG 2017: </span> Joined LUMS
+                                    as a Research Assistant under Dr. Fareed Zaffar.
+                                </li>
+                                <li><span class="text-primary" style="font-weight: bold;">JUN 2017: </span> Joined TPI
+                                    LUMS as a ROR Web Developer Intern.
+                                </li>
+                                <li><span class="text-primary" style="font-weight: bold;">SEPT 2016: </span> Joined
+                                    FASTCARE Lahore Chapter as a lead Graphic Designer.
+                                </li>
+                                <li><span class="text-primary" style="font-weight: bold;">MAR 2016: </span> Joined NUCES
+                                    ACM Lahore Chapter as a Graphic Designer.
+                                </li>
+                                <li><span class="text-primary" style="font-weight: bold;">AUG 2014: </span> Started
+                                    Bachelor's in Computer Science from FAST NU (Lahore Campus).
+                                </li>
+
+                            </ul>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -156,7 +210,6 @@
                 <ul class="carousel-indicators">
                     <li data-target="#demo" data-slide-to="0" class="active"></li>
                     <li data-target="#demo" data-slide-to="1"></li>
-                    <li data-target="#demo" data-slide-to="2"></li>
                 </ul>
 
                 <!-- The slideshow -->
@@ -169,7 +222,7 @@
                             Shafiq,
                             Padmini Srinivasan and Fareed Zaffar</p>
 
-                        <div class="container">
+                        <div class="container" >
                             <div class="row">
                                 <div class="col">
 
@@ -190,7 +243,7 @@
 
                                     </div>
                                 </div>
-                                <div class="col">
+                                <div class="col" style="padding-right: 100px">
                                     <p class="lead mb-5">Stylometric authorship attribution aims to
                                         identify an anonymous or disputed document’s author
                                         by examining its writing style. The development of
@@ -236,53 +289,7 @@
 
                                     </div>
                                 </div>
-                                <div class="col">
-                                    <p class="lead mb-5">Stylometric authorship attribution aims to
-                                        identify an anonymous or disputed document’s author
-                                        by examining its writing style. The development of
-                                        powerful machine learning based stylometric authorship
-                                        attribution methods presents a serious privacy threat
-                                        for individuals such as journalists and activists who
-                                        wish to publish anonymously. Researchers have proposed several authorship
-                                        obfuscation
-                                        approaches that
-                                        try to make appropriate changes (e.g. word/phrase replacements) to evade
-                                        attribution while
-                                        preserving semantics. </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <h3 class="mb-0">A Girl Has No Name: Automated Authorship Obfuscation using Mutant-X
-                            (<span class="text-primary">PoPETs 2019</span>)
-                        </h3>
-                        <p class="lead mb-5"><span class="text-primary"><b>Asad Mahmood</b></span>, Faizan Ahmed, Zubair
-                            Shafiq,
-                            Padmini Srinivasan and Fareed Zaffar</p>
-
-                        <div class="container">
-                            <div class="row">
-                                <div class="col">
-
-                                    <div style="grid-column: 1;grid-row: 1;">
-                                        <img src="img/monitor.png" alt=""
-                                             style="max-width: 100%;height: auto;">
-                                    </div>
-
-                                    <div class="text-center">
-
-                                        <a href="https://petsymposium.org/2019/files/papers/issue4/popets-2019-0058.pdf"
-                                           class="btn btn-primary" role="button">Paper</a>
-                                        <a href="https://github.com/asad1996172/Mutant-X" class="btn btn-primary"
-                                           role="button">Code</a>
-                                        <a href="https://www.slideshare.net/secret/aKHVXj8PXiMm2"
-                                           class="btn btn-primary"
-                                           role="button">Slides</a>
-
-                                    </div>
-                                </div>
-                                <div class="col">
+                                <div class="col" style="padding-right: 100px">
                                     <p class="lead mb-5">Stylometric authorship attribution aims to
                                         identify an anonymous or disputed document’s author
                                         by examining its writing style. The development of
