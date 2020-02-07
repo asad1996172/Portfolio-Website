@@ -1424,7 +1424,47 @@
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="bibliography">
         <div class="w-100">
             <div class="container">
-                
+              <h2 class="mb-5">Research Papers Bibliography</h2>
+<input class="form-control" id="myInput" type="text" placeholder="Search..">
+<br>
+<table class="table table-bordered table-striped">
+  <thead style="background-color: #1b561d;color: white;">
+    <tr>
+      <th>Paper</th>
+      <th>Conference</th>
+      <th>Year</th>
+      <th>Topics</th>
+    </tr>
+  </thead>
+  <tbody id="myTable">
+    <tr>
+      <td><a href="https://aaai.org/ojs/index.php/ICWSM/article/view/3354">Race, Ethnicity and National Origin-Based Discrimination in Social Media and Hate Crimes across 100 U.S. Cities</a></td>
+      <td>ICWSDM</td>
+      <td>2019</td>
+      <td><a
+         class="btn btn-primary"
+         style="padding: 0px;padding-left: 10px; padding-right: 10px; color: white"
+         role="button">Code</a></td>
+    </tr>
+    <tr>
+      <td>Mary</td>
+      <td>Moe</td>
+      <td>mary@mail.com</td>
+    </tr>
+    <tr>
+      <td>July</td>
+      <td>Dooley</td>
+      <td>july@greatstuff.com</td>
+    </tr>
+    <tr>
+      <td>Anja</td>
+      <td>Ravendale</td>
+      <td>a_r@test.com</td>
+    </tr>
+  </tbody>
+</table>
+
+
             </div>
         </div>
     </section>
@@ -1537,6 +1577,17 @@
 
 <!-- Custom scripts for this template -->
 <script src="js/resume.min.js"></script>
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
 <script>
     $(document).ready(function () {
         $('[data-toggle="tooltip"]').tooltip();
