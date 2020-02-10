@@ -11,17 +11,17 @@
     <title>Resume - Start Bootstrap Theme</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url_for('static',filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="{{ url_for('static',filename='vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <!-- Custom styles for this template -->
-    <link href="css/resume.min.css" rel="stylesheet">
+    <link href="{{ url_for('static',filename='css/resume.min.css') }}" rel="stylesheet">
     <style>
         .btn-primary,
         .btn-primary:active,
@@ -67,7 +67,7 @@
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none">Asad Mahmood</span>
         <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="{{ url_for('static',filename = about_data['profile_picture']) }}" alt="">
       </span>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -118,45 +118,30 @@
             <div class="container">
                 <div class="row">
                     <div class="col-8">
-                        <h1 class="mb-5">Asad
-                            <span class="text-primary">Mahmood</span>
+                        <h1 class="mb-5">{{about_data['first_name']}}
+                            <span class="text-primary">{{about_data['last_name']}}</span>
                         </h1>
-                        <div class="subheading mb-5">
+                        <div class="lead mb-5">
                             <a href="mailto:amahmood1@uiowa.com"> <i class="fas fa-envelope"></i>
-                                amahmood1@uiowa.com</a> <br>
-                            <i class="fas fa-phone-alt"></i> (319) 512-5163 <br>
-                            <i class="fas fa-map-marker-alt"></i> 1015 Oakcrest Street Apt G3, Iowa City, IA 52246
+                                {{about_data['email_address']}}</a> <a  href="{{ url_for('static',filename = about_data['resume_path']) }}" style="padding-left:20px;padding-right:20px;float:right;"
+                                               class="btn btn-primary" role="button">Resume</a><br>
+                            <i class="fas fa-phone-alt"></i> {{about_data['mobile_number']}} <br>
+                            <i class="fas fa-map-marker-alt"></i> {{about_data['address']}}
 
 
                         </div>
-                        <p class="lead mb-5">I am a second-year PhD student in the department of Computer Science at <a
-                                href="https://cs.uiowa.edu/">The University of Iowa</a>. I am advised by <a
-                                href="http://homepage.cs.uiowa.edu/~psriniva/newsite/index.html">Dr. Padmini
-                            Srinivasan</a> and
-                            co-advised by <a href="https://homepage.divms.uiowa.edu/~mshafiq/">Dr. Zubair Shafiq</a>
-                            from The
-                            University of Iowa. My research is focused on using Natural Language Processing and Machine
-                            Learning
-                            techniques to achieve user privacy. I also have a keen interest in the fields of Data
-                            Science and
-                            Software Engineering. Previously, I worked at <a href="http://www.tpilums.org/">TPI Lab</a>
-                            in LUMS
-                            under the supervision of <a href="https://lums.edu.pk/lums_employee/422">Dr. Fareed
-                                Zaffar</a>.</p>
-                        <p class="lead mb-5"><span class="text-primary">Interests: </span>I love to play all kinds of
-                            sports. Specifically, I like Soccer, Squash and
-                            Cricket. I also love hiking.</p>
+                        {{about_data['description']|safe}}
                         <div class="social-icons">
-                            <a href="https://www.linkedin.com/in/asad1996172/">
+                            <a href="{{about_data['linkedIn']}}">
                                 <i class="fab fa-linkedin-in"></i>
                             </a>
-                            <a href="https://github.com/asad1996172">
+                            <a href="{{about_data['Github']}}">
                                 <i class="fab fa-github"></i>
                             </a>
-                            <a href="https://twitter.com/asad177mahmood">
+                            <a href="{{about_data['Twitter']}}">
                                 <i class="fab fa-twitter"></i>
                             </a>
-                            <a href="https://medium.com/@asad007mahmood">
+                            <a href="{{about_data['Medium']}}">
                                 <i class="fab fa-medium"></i>
                             </a>
                             <!--                <a href="https://www.kaggle.com/asad1m9a9h6mood">-->
@@ -1569,14 +1554,14 @@
 </div>
 
 <!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="{{ url_for('static',filename='vendor/jquery/jquery.min.js') }}"></script>
+<script src="{{ url_for('static',filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 
 <!-- Plugin JavaScript -->
-<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="{{ url_for('static',filename='vendor/jquery-easing/jquery.easing.min.js') }}"></script>
 
 <!-- Custom scripts for this template -->
-<script src="js/resume.min.js"></script>
+<script src="{{ url_for('static',filename='js/resume.min.js') }}"></script>
 <script>
 $(document).ready(function(){
   $('[data-toggle="tooltip"]').tooltip();
