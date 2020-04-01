@@ -67,7 +67,8 @@
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none">Asad Mahmood</span>
         <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="{{ url_for('static',filename = about_data['profile_picture']) }}" alt="">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2"
+             src="{{ url_for('static',filename = about_data['profile_picture']) }}" alt="">
       </span>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -123,8 +124,10 @@
                         </h1>
                         <div class="lead mb-5">
                             <a href="mailto:amahmood1@uiowa.com"> <i class="fas fa-envelope"></i>
-                                {{about_data['email_address']}}</a> <a  href="{{ url_for('static',filename = about_data['resume_path']) }}" style="padding-left:20px;padding-right:20px;float:right;"
-                                               class="btn btn-primary" role="button">Resume</a><br>
+                                {{about_data['email_address']}}</a> <a
+                                href="{{ url_for('static',filename = about_data['resume_path']) }}"
+                                style="padding-left:20px;padding-right:20px;float:right;"
+                                class="btn btn-primary" role="button">Resume</a><br>
                             <i class="fas fa-phone-alt"></i> {{about_data['mobile_number']}} <br>
                             <i class="fas fa-map-marker-alt"></i> {{about_data['address']}}
 
@@ -163,44 +166,11 @@
                         <div class="entry-content"
                              style="overflow-y: scroll; height:500px; width: auto; background-image: linear-gradient(rgba(255,255,0,0), rgba(0,133,29,0.29), rgba(0,255,48,0.02));">
                             <ul>
-                                <li><span class="text-primary" style="font-weight: bold;">JAN 2020: </span> Served as an
-                                    external reviewer in PoPETs 2020.
-                                </li>
-                                <li><span class="text-primary" style="font-weight: bold;">SEPT 2019: </span> Achieved
-                                    6th position out of 55 submissions at PAN 2019, for model detecting Humans vs Bots
-                                    on Twitter.
-                                </li>
-                                <li><span class="text-primary" style="font-weight: bold;">AUG 2019: </span> Cleared
-                                    Qualifying exam of PhD.
-                                </li>
-                                <li><span class="text-primary" style="font-weight: bold;">JUL 2019: </span> Presented
-                                    our paper at PoPETs in Stockholm, Sweden.
-                                </li>
-                                <li><span class="text-primary" style="font-weight: bold;">JUN 2019: </span> Our paper
-                                    titled "A Girl Has No Name: Automated Authorship
-                                    Obfuscation using Mutant-X" got published in PoPETs.
-                                </li>
-                                <li><span class="text-primary" style="font-weight: bold;">AUG 2018: </span> Joined The
-                                    University of Iowa for PhD in Computer Science.
-                                </li>
-                                <li><span class="text-primary" style="font-weight: bold;">MAY 2018: </span> Graduated
-                                    from FAST NU (Lahore Campus).
-                                </li>
-                                <li><span class="text-primary" style="font-weight: bold;">AUG 2017: </span> Joined LUMS
-                                    as a Research Assistant under Dr. Fareed Zaffar.
-                                </li>
-                                <li><span class="text-primary" style="font-weight: bold;">JUN 2017: </span> Joined TPI
-                                    LUMS as a ROR Web Developer Intern.
-                                </li>
-                                <li><span class="text-primary" style="font-weight: bold;">SEPT 2016: </span> Joined
-                                    FASTCARE Lahore Chapter as a lead Graphic Designer.
-                                </li>
-                                <li><span class="text-primary" style="font-weight: bold;">MAR 2016: </span> Joined NUCES
-                                    ACM Lahore Chapter as a Graphic Designer.
-                                </li>
-                                <li><span class="text-primary" style="font-weight: bold;">AUG 2014: </span> Started
-                                    Bachelor's in Computer Science from FAST NU (Lahore Campus).
-                                </li>
+                                {%for i in range(0, about_data["highlights_length"])%}
+                                {% for key, value in about_data["highlights"][i].items() %}
+                                <li><span class="text-primary" style="font-weight: bold;">{{key}}: </span>{{value}}</li>
+                                {% endfor %}
+                                {%endfor%}
 
                             </ul>
                         </div>
@@ -220,98 +190,103 @@
 
                     <!-- Indicators -->
                     <ul class="carousel-indicators">
+                        {%for i in range(0, publications_data["total_papers"])%}
+                        {% if i == 0 %}
                         <li data-target="#demo1" data-slide-to="0" class="active"></li>
-                        <li data-target="#demo1" data-slide-to="1"></li>
+                        {% else %}
+                        <li data-target="#demo1" data-slide-to="{{ i }}"></li>
+                        {% endif %}
+                        {%endfor%}
+
                     </ul>
 
                     <!-- The slideshow -->
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <h3 class="mb-0">A Girl Has No Name: Automated Authorship Obfuscation using Mutant-X
-                                (<span class="text-primary">PoPETs 2019</span>)
+                            <h3 class="mb-0">{{ publications_data['papers'][0]['name'] }}
+                                (<span class="text-primary">{{ publications_data['papers'][0]['conference_year'] }}</span>)
                             </h3>
-                            <p class="lead mb-5"><span class="text-primary"><b>Asad Mahmood</b></span>, Faizan Ahmed,
-                                Zubair
-                                Shafiq,
-                                Padmini Srinivasan and Fareed Zaffar</p>
+                            <p class="lead mb-5">
+                                {%for j in range(0, publications_data['papers'][0]['total_authors'])%}
+                                {% if 'Asad Mahmood' in publications_data['papers'][0]['authors'][j] %}
+                                <span class="text-primary"><b> {{ publications_data['papers'][0]['authors'][j] }} </b></span>
+                                {% else %}
+                                {{ publications_data['papers'][0]['authors'][j] }}
+                                {% endif %}
+                                {%endfor%}
+                            </p>
 
                             <div class="container">
                                 <div class="row">
                                     <div class="col">
 
                                         <div style="grid-column: 1;grid-row: 1;">
-                                            <img src="img/mutant-X.png" alt=""
+                                            <img src="{{ url_for('static',filename = publications_data['papers'][0]['image']) }}"
+                                                 alt=""
                                                  style="max-width: 100%;height: auto;">
                                         </div>
 
                                         <div class="text-center">
+                                            {%for j in range(0, publications_data['papers'][0]['total_buttons'])%}
+                                            {% for key, value in publications_data['papers'][0]['buttons'][j].items() %}
+                                            <a href="{{ value }}" class="btn btn-primary" role="button"> {{ key }} </a>
+                                            {% endfor %}
+                                            {%endfor%}
 
-                                            <a href="https://petsymposium.org/2019/files/papers/issue4/popets-2019-0058.pdf"
-                                               class="btn btn-primary" role="button">Paper</a>
-                                            <a href="https://github.com/asad1996172/Mutant-X" class="btn btn-primary"
-                                               role="button">Code</a>
-                                            <a href="https://www.slideshare.net/secret/aKHVXj8PXiMm2"
-                                               class="btn btn-primary"
-                                               role="button">Slides</a>
 
                                         </div>
                                     </div>
                                     <div class="col" style="padding-right: 100px">
-                                        <p class="lead mb-5">Stylometric authorship attribution aims to
-                                            identify an anonymous or disputed document’s author
-                                            by examining its writing style. The development of
-                                            powerful machine learning based stylometric authorship
-                                            attribution methods presents a serious privacy threat
-                                            for individuals such as journalists and activists who
-                                            wish to publish anonymously. To counter these, in this paper, we presented
-                                            an automated authorship obfuscation tool called Mutant-X which uses genetic
-                                            algorithms (GAs) and sentiment preserving word embeddings. </p>
+                                        <p class="lead mb-5"> {{ publications_data['papers'][0]['description'] }} </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <h3 class="mb-0">Twitter Bots and Gender Detection using Tf-idf
-                                (<span class="text-primary">CLEF 2019</span>)
+                        {%for i in range(0, publications_data["total_papers"])%}
+                        {% if i != 0 %}
+                            <div class="carousel-item">
+                            <h3 class="mb-0">{{ publications_data['papers'][i]['name'] }}
+                                (<span class="text-primary">{{ publications_data['papers'][i]['conference_year'] }}</span>)
                             </h3>
-                            <p class="lead mb-5"><span class="text-primary"><b>Asad Mahmood</b></span>,
-                                Padmini Srinivasan</p>
+                            <p class="lead mb-5">
+                                {%for j in range(0, publications_data['papers'][i]['total_authors'])%}
+                                {% if 'Asad Mahmood' in publications_data['papers'][i]['authors'][j] %}
+                                <span class="text-primary"><b> {{ publications_data['papers'][i]['authors'][j] }} </b></span>
+                                {% else %}
+                                {{ publications_data['papers'][i]['authors'][j] }}
+                                {% endif %}
+                                {%endfor%}
+                            </p>
 
                             <div class="container">
                                 <div class="row">
                                     <div class="col">
 
                                         <div style="grid-column: 1;grid-row: 1;">
-                                            <img src="img/monitor.png" alt=""
+                                            <img src="{{ url_for('static',filename = publications_data['papers'][i]['image']) }}"
+                                                 alt=""
                                                  style="max-width: 100%;height: auto;">
                                         </div>
 
                                         <div class="text-center">
+                                            {%for j in range(0, publications_data['papers'][i]['total_buttons'])%}
+                                            {% for key, value in publications_data['papers'][i]['buttons'][j].items() %}
+                                            <a href="{{ value }}" class="btn btn-primary" role="button"> {{ key }} </a>
+                                            {% endfor %}
+                                            {%endfor%}
 
-                                            <a href="http://www.dei.unipd.it/~ferro/CLEF-WN-Drafts/CLEF2019/paper_253.pdf"
-                                               class="btn btn-primary" role="button">Paper</a>
-                                            <a href="https://github.com/asad1996172/Mutant-X" class="btn btn-primary"
-                                               role="button">Code</a>
 
                                         </div>
                                     </div>
                                     <div class="col" style="padding-right: 100px">
-                                        <p class="lead mb-5">This paper
-                                            presents another a model that can perform bots and gender detection on
-                                            Twitter using just the tweets from the respective Twitter user. We show that
-                                            a simple frequency based approach with a machine learning algorithm i.e.,
-                                            SVM can
-                                            achieve high accuracy if the preprocessing is done right. In English
-                                            language. our
-                                            model detects bots with an accuracy of 91% and gender with an accuracy of
-                                            82%.
-                                            Main strength of this model is its simplicity along-with the ease with which
-                                            it can
-                                            be used with other languages. </p>
+                                        <p class="lead mb-5"> {{ publications_data['papers'][i]['description'] }} </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        {% endif %}
+                        {%endfor%}
+
                     </div>
 
                     <!-- Left and right controls -->
@@ -1409,45 +1384,47 @@
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="bibliography">
         <div class="w-100">
             <div class="container">
-              <h2 class="mb-5">Research Papers Bibliography</h2>
-<input class="form-control" id="myInput" type="text" placeholder="Search..">
-<br>
-<table class="table table-bordered table-striped">
-  <thead style="background-color: #1b561d;color: white;">
-    <tr>
-      <th>Paper</th>
-      <th>Conference</th>
-      <th>Year</th>
-      <th>Topics</th>
-    </tr>
-  </thead>
-  <tbody id="myTable">
-    <tr>
-      <td><a href="https://aaai.org/ojs/index.php/ICWSM/article/view/3354">Race, Ethnicity and National Origin-Based Discrimination in Social Media and Hate Crimes across 100 U.S. Cities</a></td>
-      <td>ICWSDM</td>
-      <td>2019</td>
-      <td><a
-         class="btn btn-primary"
-         style="padding: 0px;padding-left: 10px; padding-right: 10px; color: white"
-         role="button">Code</a></td>
-    </tr>
-    <tr>
-      <td>Mary</td>
-      <td>Moe</td>
-      <td>mary@mail.com</td>
-    </tr>
-    <tr>
-      <td>July</td>
-      <td>Dooley</td>
-      <td>july@greatstuff.com</td>
-    </tr>
-    <tr>
-      <td>Anja</td>
-      <td>Ravendale</td>
-      <td>a_r@test.com</td>
-    </tr>
-  </tbody>
-</table>
+                <h2 class="mb-5">Research Papers Bibliography</h2>
+                <input class="form-control" id="myInput" type="text" placeholder="Search..">
+                <br>
+                <table class="table table-bordered table-striped">
+                    <thead style="background-color: #1b561d;color: white;">
+                    <tr>
+                        <th>Paper</th>
+                        <th>Conference</th>
+                        <th>Year</th>
+                        <th>Topics</th>
+                    </tr>
+                    </thead>
+                    <tbody id="myTable">
+                    <tr>
+                        <td><a href="https://aaai.org/ojs/index.php/ICWSM/article/view/3354">Race, Ethnicity and
+                            National Origin-Based Discrimination in Social Media and Hate Crimes across 100 U.S.
+                            Cities</a></td>
+                        <td>ICWSDM</td>
+                        <td>2019</td>
+                        <td><a
+                                class="btn btn-primary"
+                                style="padding: 0px;padding-left: 10px; padding-right: 10px; color: white"
+                                role="button">Code</a></td>
+                    </tr>
+                    <tr>
+                        <td>Mary</td>
+                        <td>Moe</td>
+                        <td>mary@mail.com</td>
+                    </tr>
+                    <tr>
+                        <td>July</td>
+                        <td>Dooley</td>
+                        <td>july@greatstuff.com</td>
+                    </tr>
+                    <tr>
+                        <td>Anja</td>
+                        <td>Ravendale</td>
+                        <td>a_r@test.com</td>
+                    </tr>
+                    </tbody>
+                </table>
 
 
             </div>
@@ -1563,15 +1540,15 @@
 <!-- Custom scripts for this template -->
 <script src="{{ url_for('static',filename='js/resume.min.js') }}"></script>
 <script>
-$(document).ready(function(){
-  $('[data-toggle="tooltip"]').tooltip();
-  $("#myInput").on("keyup", function() {
-    var value = $(this).val().toLowerCase();
-    $("#myTable tr").filter(function() {
-      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+        $("#myInput").on("keyup", function () {
+            var value = $(this).val().toLowerCase();
+            $("#myTable tr").filter(function () {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
     });
-  });
-});
 </script>
 <script>
     $(document).ready(function () {

@@ -1,1 +1,52 @@
-{"profile_picture": "img/profile.jpg", "first_name": "Asad", "last_name": "Mahmood", "email_address": "amahmood1@uiowa.edu", "mobile_number": "(319) 512-5163", "address": "1015 Oakcrest Street Apt G3, Iowa City, IA 52246", "resume_path": "resume.pdf", "description": "<p class=\"lead mb-5\">I am a second-year PhD student in the department of Computer Science at <a href=\"https://cs.uiowa.edu/\">The University of Iowa</a>. I am advised by <a href=\"http://homepage.cs.uiowa.edu/~psriniva/newsite/index.html\">Dr. Padmini Srinivasan</a> and co-advised by <a href=\"https://homepage.divms.uiowa.edu/~mshafiq/\">Dr. Zubair Shafiq</a> from The University of Iowa. My research is focused on using Natural Language Processing and Machine Learning techniques to achieve user privacy. I also have a keen interest in the fields of Data Science and Software Engineering. Previously, I worked at <a href=\"http://www.tpilums.org/\">TPI Lab</a> in LUMS under the supervision of <a href=\"https://lums.edu.pk/lums_employee/422\">Dr. Fareed Zaffar</a>.</p> <p class=\"lead mb-5\"><span class=\"text-primary\">Interests: </span>I love to play all kinds of sports. Specifically, I like Soccer, Squash and Cricket. I also love hiking.</p>", "linkedIn": "https://www.linkedin.com/in/asad1996172/", "Github": "https://github.com/asad1996172", "Twitter": "https://twitter.com/asad177mahmood", "Medium": "https://medium.com/@asad007mahmood", "highlights": [{"date": "JAN 2020", "description": "Served as an external reviewer in PoPETs 2020."}, {"date": "JAN 2020", "description": "Served as an external reviewer in PoPETs 2020."}]}
+{
+    "profile_picture": "img/profile.jpg",
+    "first_name": "Asad",
+    "last_name": "Mahmood",
+    "email_address": "amahmood1@uiowa.edu",
+    "mobile_number": "(319) 512-5163",
+    "address": "1015 Oakcrest Street Apt G3, Iowa City, IA 52246",
+    "resume_path": "resume.pdf",
+    "description": "<p class=\"lead mb-5\">I am a second-year PhD student in the department of Computer Science at <a href=\"https://cs.uiowa.edu/\">The University of Iowa</a>. I am advised by <a href=\"http://homepage.cs.uiowa.edu/~psriniva/newsite/index.html\">Dr. Padmini Srinivasan</a> and co-advised by <a href=\"https://homepage.divms.uiowa.edu/~mshafiq/\">Dr. Zubair Shafiq</a> from The University of Iowa. My research is focused on using Natural Language Processing and Machine Learning techniques to achieve user privacy. I also have a keen interest in the fields of Data Science and Software Engineering. Previously, I worked at <a href=\"http://www.tpilums.org/\">TPI Lab</a> in LUMS under the supervision of <a href=\"https://lums.edu.pk/lums_employee/422\">Dr. Fareed Zaffar</a>.</p> <p class=\"lead mb-5\"><span class=\"text-primary\">Interests: </span>I love to play all kinds of sports. Specifically, I like Soccer, Squash and Cricket. I also love hiking.</p>",
+    "linkedIn": "https://www.linkedin.com/in/asad1996172/",
+    "Github": "https://github.com/asad1996172",
+    "Twitter": "https://twitter.com/asad177mahmood",
+    "Medium": "https://medium.com/@asad007mahmood",
+    "highlights": [
+        {
+            "JAN 2020": "Served as an external reviewer in PoPETs 2020."
+        },
+        {
+            "SEPT 2019": "Achieved 6th position out of 55 submissions at PAN 2019, for model detecting Humans vs Bots on Twitter."
+        },
+        {
+            "AUG 2019": "Cleared Qualifying exam of PhD."
+        },
+        {
+            "JUL 2019": "Presented our paper at PoPETs in Stockholm, Sweden."
+        },
+        {
+            "JUN 2019": "Our paper titled \"A Girl Has No Name: Automated Authorship Obfuscation using Mutant-X\" got published in PoPETs."
+        },
+        {
+            "AUG 2018": "Joined The University of Iowa for PhD in Computer Science."
+        },
+        {
+            "MAY 2018": "Graduated from FAST NU (Lahore Campus)."
+        },
+        {
+            "AUG 2017": "Joined LUMS as a Research Assistant under Dr. Fareed Zaffar."
+        },
+        {
+            "JUN 2017": "Joined TPI LUMS as a ROR Web Developer Intern."
+        },
+        {
+            "SEPT 2016": "Joined FASTCARE Lahore Chapter as a lead Graphic Designer."
+        },
+        {
+            "MAR 2016": "Joined NUCES ACM Lahore Chapter as a Graphic Designer."
+        },
+        {
+            "AUG 2014": "Started Bachelor's in Computer Science from FAST NU (Lahore Campus)."
+        }
+    ]
+}

@@ -16,11 +16,62 @@ def create_about_data():
         "Twitter": "https://twitter.com/asad177mahmood",
         "Medium": "https://medium.com/@asad007mahmood",
         "highlights": [
-            {"date": "JAN 2020", "description": "Served as an external reviewer in PoPETs 2020."},
-            {"date": "JAN 2020", "description": "Served as an external reviewer in PoPETs 2020."}
+            {"JAN 2020": "Served as an external reviewer in PoPETs 2020."},
+            {"SEPT 2019": "Achieved 6th position out of 55 submissions at PAN 2019, for model detecting Humans vs Bots on Twitter."},
+            {"AUG 2019": "Cleared Qualifying exam of PhD."},
+            {"JUL 2019": "Presented our paper at PoPETs in Stockholm, Sweden."},
+            {"JUN 2019": 'Our paper titled "A Girl Has No Name: Automated Authorship Obfuscation using Mutant-X" got published in PoPETs.'},
+            {"AUG 2018": "Joined The University of Iowa for PhD in Computer Science."},
+            {"MAY 2018": "Graduated from FAST NU (Lahore Campus)."},
+            {"AUG 2017": "Joined LUMS as a Research Assistant under Dr. Fareed Zaffar."},
+            {"JUN 2017": "Joined TPI LUMS as a ROR Web Developer Intern."},
+            {"SEPT 2016": "Joined FASTCARE Lahore Chapter as a lead Graphic Designer."},
+            {"MAR 2016": "Joined NUCES ACM Lahore Chapter as a Graphic Designer."},
+            {"AUG 2014": "Started Bachelor's in Computer Science from FAST NU (Lahore Campus)."}
         ]
     }
     with open("about.json", "w") as write_file:
-        json.dump(data, write_file)
+        json.dump(data, write_file, indent=4)
 
-create_about_data()
+
+def create_publications_data():
+    data = {
+        "papers": [
+            {
+                "name": "A Girl Has No Name: Automated Authorship Obfuscation using Mutant-X",
+                "conference_year": "PoPETs 2019",
+                "authors": ["Asad Mahmood, ", "Faizan Ahmed, ", "Zubair Shafiq, ", "Padmini Srinivasan ",
+                            "and Fareed Zaffar"],
+                "total_authors": 5,
+                "description": "Stylometric authorship attribution aims to identify an anonymous or disputed document’s author by examining its writing style. The development of powerful machine learning based stylometric authorship attribution methods presents a serious privacy threat for individuals such as journalists and activists who wish to publish anonymously. To counter these, in this paper, we presented an automated authorship obfuscation tool called Mutant-X which uses genetic algorithms (GAs) and sentiment preserving word embeddings.",
+                "total_buttons": 3,
+                "buttons": [
+                    {"paper": "https://petsymposium.org/2019/files/papers/issue4/popets-2019-0058.pdf"},
+                    {"code": "https://github.com/asad1996172/Mutant-X"},
+                    {"slides": "https://www.slideshare.net/secret/aKHVXj8PXiMm2"}
+
+                ],
+                "image": "img/mutant-X.png"
+            },
+            {
+                "name": "Twitter Bots and Gender Detection using Tf-idf",
+                "conference_year": "CLEF 2019",
+                "authors": ["Asad Mahmood ", "and Padmini Srinivasan"],
+                "total_authors": 2,
+                "description": "This paper presents another a model that can perform bots and gender detection on Twitter using just the tweets from the respective Twitter user. We show that a simple frequency based approach with a machine learning algorithm i.e., SVM can achieve high accuracy if the preprocessing is done right. In English language. our model detects bots with an accuracy of 91% and gender with an accuracy of 82%. Main strength of this model is its simplicity along-with the ease with which it can be used with other languages.",
+                "total_buttons": 2,
+                "buttons": [
+                    {"paper": "http://www.dei.unipd.it/~ferro/CLEF-WN-Drafts/CLEF2019/paper_253.pdf"},
+                    {"code": ""}
+                ],
+                "image": "img/monitor.png"
+            }
+        ]
+    }
+    with open("publications.json", "w") as write_file:
+        json.dump(data, write_file, indent=4)
+
+
+if __name__ == "__main__":
+    create_about_data()
+    create_publications_data()
