@@ -244,7 +244,7 @@
                         </div>
                         {%for i in range(0, publications_data["total_papers"])%}
                         {% if i != 0 %}
-                            <div class="carousel-item">
+                        <div class="carousel-item">
                             <h3 class="mb-0">{{ publications_data['papers'][i]['name'] }}
                                 (<span class="text-primary">{{ publications_data['papers'][i]['conference_year'] }}</span>)
                             </h3>
@@ -312,9 +312,8 @@
 
 
                 <ul class="nav nav-pills">
-                    <li class="active"><a class="btn btn-primary" data-toggle="pill" href="#all"
-                                          style="margin-left: 5px">All</a></li>
-                    <li><a class="btn btn-primary" data-toggle="pill" href="#data_science" style="margin-left: 5px">Data
+                    <li class="active"><a class="btn btn-primary" data-toggle="pill" href="#data_science"
+                                          style="margin-left: 5px">Data
                         Science</a></li>
                     <li><a class="btn btn-primary" data-toggle="pill" href="#web_dev" style="margin-left: 5px">Web
                         Development</a></li>
@@ -323,584 +322,114 @@
                 </ul>
 
                 <div class="tab-content">
-                    <div id="all" class="tab-pane active">
-                        <div id="demo2" class="carousel slide" style="margin-top: 50px;" data-ride="carousel">
-
-                            <!-- Indicators -->
-                            <ul class="carousel-indicators">
-                                <li data-target="#demo2" data-slide-to="0" class="active"></li>
-                                <li data-target="#demo2" data-slide-to="1"></li>
-                                <li data-target="#demo2" data-slide-to="2"></li>
-                                <li data-target="#demo2" data-slide-to="3"></li>
-                                <li data-target="#demo2" data-slide-to="4"></li>
-                                <li data-target="#demo2" data-slide-to="5"></li>
-                                <li data-target="#demo2" data-slide-to="6"></li>
-                                <li data-target="#demo2" data-slide-to="7"></li>
-                                <li data-target="#demo2" data-slide-to="8"></li>
-                                <li data-target="#demo2" data-slide-to="9"></li>
-                                <li data-target="#demo2" data-slide-to="10"></li>
-                                <li data-target="#demo2" data-slide-to="11"></li>
-                                <li data-target="#demo2" data-slide-to="12"></li>
-                            </ul>
-
-                            <!-- The slideshow -->
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <h3 class="mb-0">Predictive Modelling on Stocks Data
-                                    </h3>
-                                    <p class="lead mb-5"> Flask application that trains different ML Models on stock
-                                        prices and then show it on a plot.</p>
-
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col">
-
-                                                <div style="grid-column: 1;grid-row: 1;">
-                                                    <img src="img/stocks.png" alt=""
-                                                         style="max-width: 100%;height: auto;">
-                                                </div>
-
-                                                <div class="text-center">
-
-                                                    <a href="https://github.com/asad1996172/Predictive-Modelling-on-Stock-Prices"
-                                                       class="btn btn-primary"
-                                                       style="padding-left: 30px; padding-right: 30px"
-                                                       role="button">Code</a>
-
-
-                                                </div>
-                                            </div>
-                                            <div class="col" style="padding-right: 100px">
-                                                <p class="lead mb-5">This flask based tool compares the predictive
-                                                    modelling power of different Machine/Deep Learning models. For
-                                                    dataset, i have opening, high, low and closing values for different
-                                                    stocks like AAL, AAP, AAPL. Then to train different models, tool
-                                                    provides with a bunch of options like Random Forests, K Nearest
-                                                    Neighbors, SVM, LSTM etc.. Models are implemented using scikit-learn
-                                                    and keras. Performance of each chosen model is shown using Chart.js
-                                                    library. </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <h3 class="mb-0">Hotel Management System (HMS) Web Application
-                                    </h3>
-                                    <p class="lead mb-5">A PHP Laravel based web application for hotel management.</p>
-
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col">
-
-                                                <div style="grid-column: 1;grid-row: 1;">
-                                                    <img src="img/hms.png" alt=""
-                                                         style="max-width: 100%;height: auto;">
-                                                </div>
-
-                                                <div class="text-center">
-
-                                                    <a href="https://github.com/asad1996172/HMS"
-                                                       class="btn btn-primary"
-                                                       style="padding-left: 30px; padding-right: 30px"
-                                                       role="button">Code</a>
-
-                                                </div>
-                                            </div>
-                                            <div class="col" style="padding-right: 100px">
-                                                <p class="lead mb-5">It's a hotel management web application with 3 user
-                                                    types. Customer, person visiting the website for information or
-                                                    booking. This could be guest or a person with their own profile.
-                                                    Then there is manager, who is supposed to add rooms information and
-                                                    lastly there is admin, whose job is to approve tasks done by
-                                                    manager. Every user has their own constraints and permissions have
-                                                    been implemented accordingly.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <h3 class="mb-0">Android Custom Keyboard
-                                    </h3>
-                                    <p class="lead mb-5">Android based URDU custom keyboard application.</p>
-
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col">
-
-                                                <div style="grid-column: 1;grid-row: 1;">
-                                                    <img src="img/keyboard.png" alt=""
-                                                         style="max-width: 100%;height: auto;">
-                                                </div>
-
-                                                <div class="text-center">
-
-                                                    <a href="https://github.com/asad1996172/CustomKeyboard"
-                                                       class="btn btn-primary"
-                                                       style="padding-left: 30px; padding-right: 30px"
-                                                       role="button">Code</a>
-
-                                                </div>
-                                            </div>
-                                            <div class="col" style="padding-right: 100px">
-                                                <p class="lead mb-5">This code is a implementation of a custom keyboard
-                                                    for android which extends from InputMethodService and KeyboardView.
-                                                    It has all the functionality of the traditional keyboard like
-                                                    different layout for numeric keys, more characters on long press
-                                                    etc.
-                                                </p>
-                                                <p class="lead mb-5"> I used Urdu language for this one but it can be
-                                                    modified for other
-                                                    languages as well. To do that you just need to tweak some files in
-                                                    res/layout. Here you can change the layout of keyboard, add
-                                                    different key bindings and other things as well.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <h3 class="mb-0">Quotastic
-                                    </h3>
-                                    <p class="lead mb-5">Android based application showing quotes.</p>
-
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col">
-
-                                                <div style="grid-column: 1;grid-row: 1;">
-                                                    <img src="img/quote.png" alt=""
-                                                         style="max-width: 100%;height: auto;">
-                                                </div>
-
-                                                <div class="text-center">
-
-                                                    <a href="https://github.com/asad1996172/QuoteTastic"
-                                                       class="btn btn-primary"
-                                                       style="padding-left: 30px; padding-right: 30px"
-                                                       role="button">Code</a>
-
-                                                </div>
-                                            </div>
-                                            <div class="col" style="padding-right: 100px">
-                                                <p class="lead mb-5">This is a simple Quotes reading android
-                                                    application. Quotes are pre saved into the database using SQLite.
-                                                    Once the application starts, user can read different quotes by
-                                                    pressing the "GO" button. This button chooses a quote from available
-                                                    quotes randomly and shows it.</p>
-                                                <p class="lead mb-5">This code can be extended to learn from
-                                                    user behaviour and then show quotes accordingly e.g., it can learn
-                                                    that you are trying to stay physically active 30 minutes a day and
-                                                    then show you quotes motivating towards fitness.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <h3 class="mb-0">Kids Learning Application
-                                    </h3>
-                                    <p class="lead mb-5">Android based kids learning application following HCI
-                                        rules.</p>
-
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col">
-
-                                                <div style="grid-column: 1;grid-row: 1;">
-                                                    <img src="img/kids.png" alt=""
-                                                         style="max-width: 100%;height: auto;">
-                                                </div>
-
-                                                <div class="text-center">
-
-                                                    <a href="https://github.com/asad1996172/kids"
-                                                       class="btn btn-primary"
-                                                       style="padding-left: 30px; padding-right: 30px"
-                                                       role="button">Code</a>
-
-                                                </div>
-                                            </div>
-                                            <div class="col" style="padding-right: 100px">
-                                                <p class="lead mb-5">This application was created as a project in HCI
-                                                    course. The task in hand was to create a learning application for
-                                                    kids having ages in the range of 4 - 7. Application was supposed to
-                                                    perform three different tasks. First, provided learning content,
-                                                    second, take quiz related to that content and third, show a report
-                                                    card.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <h3 class="mb-0">Dodgy Plane
-                                    </h3>
-                                    <p class="lead mb-5">Unity3D based game.</p>
-
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col">
-
-                                                <div style="grid-column: 1;grid-row: 1;">
-                                                    <img src="img/dodgy.png" alt=""
-                                                         style="max-width: 100%;height: auto;">
-                                                </div>
-
-                                                <div class="text-center">
-
-                                                    <a href="https://github.com/asad1996172/dodgy-bird"
-                                                       class="btn btn-primary"
-                                                       style="padding-left: 30px; padding-right: 30px"
-                                                       role="button">Code</a>
-
-                                                </div>
-                                            </div>
-                                            <div class="col" style="padding-right: 100px">
-                                                <p class="lead mb-5">This repository contains the code for a Unity3D
-                                                    based android game. Dodgy Plane is a simple game with only two
-                                                    controls. The player can steer the plane either to the left or to
-                                                    the right. Steering is done both to save the plane from obstacles
-                                                    and collect points.</p>
-                                                <p class="lead mb-5">All the graphics used in the game were also
-                                                    designed by me using Adobe Photoshop.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <h3 class="mb-0">News Articles Analysis
-                                    </h3>
-                                    <p class="lead mb-5">Predictive analysis on news articles using machine learning
-                                        algorithms like LR, KNN etc.</p>
-
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col">
-
-                                                <div style="grid-column: 1;grid-row: 1;">
-                                                    <img src="img/dodgy.png" alt=""
-                                                         style="max-width: 100%;height: auto;">
-                                                </div>
-
-                                                <div class="text-center">
-
-                                                    <a href="https://github.com/asad1996172/Articles-Analysis"
-                                                       class="btn btn-primary"
-                                                       style="padding-left: 30px; padding-right: 30px"
-                                                       role="button">Code</a>
-
-                                                </div>
-                                            </div>
-                                            <div class="col" style="padding-right: 100px">
-                                                <p class="lead mb-5"></p>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <h3 class="mb-0">Similar Shoe Detection
-                                    </h3>
-                                    <p class="lead mb-5">Reverse image search based tool to identify similar soccer
-                                        shoes.</p>
-
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col">
-
-                                                <div style="grid-column: 1;grid-row: 1;">
-                                                    <img src="img/dodgy.png" alt=""
-                                                         style="max-width: 100%;height: auto;">
-                                                </div>
-
-                                                <div class="text-center">
-
-                                                    <a href="https://github.com/asad1996172/Reverse-Image-Search-based-Football-Shoes-detection-tool"
-                                                       class="btn btn-primary"
-                                                       style="padding-left: 30px; padding-right: 30px"
-                                                       role="button">Code</a>
-
-                                                </div>
-                                            </div>
-                                            <div class="col" style="padding-right: 100px">
-                                                <p class="lead mb-5"></p>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <h3 class="mb-0">Authorship Attribution
-                                    </h3>
-                                    <p class="lead mb-5">Python code for authorship attribution using CNN.</p>
-
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col">
-
-                                                <div style="grid-column: 1;grid-row: 1;">
-                                                    <img src="img/dodgy.png" alt=""
-                                                         style="max-width: 100%;height: auto;">
-                                                </div>
-
-                                                <div class="text-center">
-
-                                                    <a href="https://github.com/asad1996172/Authorship-attribution-using-CNN"
-                                                       class="btn btn-primary"
-                                                       style="padding-left: 30px; padding-right: 30px"
-                                                       role="button">Code</a>
-
-                                                </div>
-                                            </div>
-                                            <div class="col" style="padding-right: 100px">
-                                                <p class="lead mb-5"></p>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <h3 class="mb-0">Pakistan Super League (PSL) Data
-                                    </h3>
-                                    <p class="lead mb-5">Selenium based python scrapper for PSL season 1 and season 2
-                                        data.</p>
-
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col">
-
-                                                <div style="grid-column: 1;grid-row: 1;">
-                                                    <img src="img/dodgy.png" alt=""
-                                                         style="max-width: 100%;height: auto;">
-                                                </div>
-
-                                                <div class="text-center">
-
-                                                    <a href="https://github.com/asad1996172/Psl-Data"
-                                                       class="btn btn-primary"
-                                                       style="padding-left: 30px; padding-right: 30px"
-                                                       role="button">Code</a>
-
-                                                </div>
-                                            </div>
-                                            <div class="col" style="padding-right: 100px">
-                                                <p class="lead mb-5"></p>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <h3 class="mb-0">Noorani Qaeda Speech Recognition
-                                    </h3>
-                                    <p class="lead mb-5">Speech recognition using CNN to teach accent.</p>
-
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col">
-
-                                                <div style="grid-column: 1;grid-row: 1;">
-                                                    <img src="img/dodgy.png" alt=""
-                                                         style="max-width: 100%;height: auto;">
-                                                </div>
-
-                                                <div class="text-center">
-
-                                                    <a href="https://github.com/asad1996172/Noorani-Qaeda-by-Speech-Recognition"
-                                                       class="btn btn-primary"
-                                                       style="padding-left: 30px; padding-right: 30px"
-                                                       role="button">Code</a>
-
-                                                </div>
-                                            </div>
-                                            <div class="col" style="padding-right: 100px">
-                                                <p class="lead mb-5"></p>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <h3 class="mb-0">Twitter Web Scrapper
-                                    </h3>
-                                    <p class="lead mb-5">Python selenium based web scrapper for twitter profile and news
-                                        feed data.</p>
-
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col">
-
-                                                <div style="grid-column: 1;grid-row: 1;">
-                                                    <img src="img/dodgy.png" alt=""
-                                                         style="max-width: 100%;height: auto;">
-                                                </div>
-
-                                                <div class="text-center">
-
-                                                    <a href="https://github.com/asad1996172/Twitter_Scrapper"
-                                                       class="btn btn-primary"
-                                                       style="padding-left: 30px; padding-right: 30px"
-                                                       role="button">Code</a>
-
-                                                </div>
-                                            </div>
-                                            <div class="col" style="padding-right: 100px">
-                                                <p class="lead mb-5"></p>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <h3 class="mb-0">Loan Return Classifier
-                                    </h3>
-                                    <p class="lead mb-5">Scikit learn based classification system for loan churn.</p>
-
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col">
-
-                                                <div style="grid-column: 1;grid-row: 1;">
-                                                    <img src="img/dodgy.png" alt=""
-                                                         style="max-width: 100%;height: auto;">
-                                                </div>
-
-                                                <div class="text-center">
-
-                                                    <a href="https://github.com/asad1996172/Classification-using-KNN-Decision-Trees-and-Linear-Regression/"
-                                                       class="btn btn-primary"
-                                                       style="padding-left: 30px; padding-right: 30px"
-                                                       role="button">Code</a>
-
-                                                </div>
-                                            </div>
-                                            <div class="col" style="padding-right: 100px">
-                                                <p class="lead mb-5"></p>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Left and right controls -->
-                            <a class="carousel-control-prev" href="#demo2" data-slide="prev">
-                                <span class="carousel-control-prev-icon"></span>
-                            </a>
-                            <a class="carousel-control-next" href="#demo2" data-slide="next">
-                                <span class="carousel-control-next-icon"></span>
-                            </a>
-
-                        </div>
-                    </div>
-                    <div id="data_science" class="tab-pane fade">
+                    <div id="data_science" class="tab-pane active">
                         <div id="demo3" class="carousel slide" style="margin-top: 50px;" data-ride="carousel">
 
                             <!-- Indicators -->
                             <ul class="carousel-indicators">
+                                {%for i in range(0, projects_data["total_data_science"])%}
+                                {% if i == 0 %}
                                 <li data-target="#demo3" data-slide-to="0" class="active"></li>
-                                <li data-target="#demo3" data-slide-to="1"></li>
+                                {% else %}
+                                <li data-target="#demo3" data-slide-to="{{ i }}"></li>
+                                {% endif %}
+                                {%endfor%}
                             </ul>
 
                             <!-- The slideshow -->
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <h3 class="mb-0">A Girl Has No Name: Automated Authorship Obfuscation using Mutant-X
-                                        (<span class="text-primary">PoPETs 2019</span>)
+                                    <h3 class="mb-0">{{ projects_data["projects"]["data_science"][0]["name"] }}
                                     </h3>
-                                    <p class="lead mb-5"><span class="text-primary"><b>Asad Mahmood</b></span>, Faizan
-                                        Ahmed, Zubair
-                                        Shafiq,
-                                        Padmini Srinivasan and Fareed Zaffar</p>
+                                    <p class="lead mb-5"> {{ projects_data["projects"]["data_science"][0]["short_desc"]
+                                        }}</p>
 
                                     <div class="container">
                                         <div class="row">
                                             <div class="col">
 
                                                 <div style="grid-column: 1;grid-row: 1;">
-                                                    <img src="img/mutant-X.png" alt=""
+                                                    <img src="{{ url_for('static',filename = projects_data['projects']['data_science'][0]['image']) }}"
+                                                         alt=""
                                                          style="max-width: 100%;height: auto;">
                                                 </div>
 
                                                 <div class="text-center">
 
-                                                    <a href="https://petsymposium.org/2019/files/papers/issue4/popets-2019-0058.pdf"
-                                                       class="btn btn-primary" role="button">Paper</a>
-                                                    <a href="https://github.com/asad1996172/Mutant-X"
-                                                       class="btn btn-primary"
-                                                       role="button">Code</a>
-                                                    <a href="https://www.slideshare.net/secret/aKHVXj8PXiMm2"
-                                                       class="btn btn-primary"
-                                                       role="button">Slides</a>
+                                                    {%for j in range(0,
+                                                    projects_data['projects']['data_science'][0]['total_buttons'])%}
+                                                    {% for key, value in
+                                                    projects_data['projects']['data_science'][0]['buttons'][j].items()
+                                                    %}
+                                                    <a href="{{ value }}"
+                                                       style="padding-left: 30px; padding-right: 30px"
+                                                       class="btn btn-primary" role="button"> {{ key
+                                                        }} </a>
+                                                    {% endfor %}
+                                                    {%endfor%}
+                                                    <!--                                                    <a href="https://github.com/asad1996172/Predictive-Modelling-on-Stock-Prices"-->
+                                                    <!--                                                       class="btn btn-primary"-->
+                                                    <!--                                                       style="padding-left: 30px; padding-right: 30px"-->
+                                                    <!--                                                       role="button">Code</a>-->
+
 
                                                 </div>
                                             </div>
                                             <div class="col" style="padding-right: 100px">
-                                                <p class="lead mb-5">Stylometric authorship attribution aims to
-                                                    identify an anonymous or disputed document’s author
-                                                    by examining its writing style. The development of
-                                                    powerful machine learning based stylometric authorship
-                                                    attribution methods presents a serious privacy threat
-                                                    for individuals such as journalists and activists who
-                                                    wish to publish anonymously. Researchers have proposed several
-                                                    authorship
-                                                    obfuscation
-                                                    approaches that
-                                                    try to make appropriate changes (e.g. word/phrase replacements) to
-                                                    evade
-                                                    attribution while
-                                                    preserving semantics. </p>
+                                                <p class="lead mb-5"> {{
+                                                    projects_data["projects"]["data_science"][0]["description"] }}</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                {%for i in range(0, projects_data['total_data_science'])%}
+                                {% if i != 0 %}
                                 <div class="carousel-item">
-                                    <h3 class="mb-0">A Girl Has No Name: Automated Authorship Obfuscation using Mutant-X
-                                        (<span class="text-primary">PoPETs 2019</span>)
+                                    <h3 class="mb-0">{{ projects_data["projects"]["data_science"][i]["name"] }}
                                     </h3>
-                                    <p class="lead mb-5"><span class="text-primary"><b>Asad Mahmood</b></span>, Faizan
-                                        Ahmed, Zubair
-                                        Shafiq,
-                                        Padmini Srinivasan and Fareed Zaffar</p>
+                                    <p class="lead mb-5"> {{ projects_data["projects"]["data_science"][i]["short_desc"]
+                                        }}</p>
 
                                     <div class="container">
                                         <div class="row">
                                             <div class="col">
 
                                                 <div style="grid-column: 1;grid-row: 1;">
-                                                    <img src="img/monitor.png" alt=""
+                                                    <img src="{{ url_for('static',filename = projects_data['projects']['data_science'][i]['image']) }}"
+                                                         alt=""
                                                          style="max-width: 100%;height: auto;">
                                                 </div>
 
                                                 <div class="text-center">
 
-                                                    <a href="https://petsymposium.org/2019/files/papers/issue4/popets-2019-0058.pdf"
-                                                       class="btn btn-primary" role="button">Paper</a>
-                                                    <a href="https://github.com/asad1996172/Mutant-X"
-                                                       class="btn btn-primary"
-                                                       role="button">Code</a>
-                                                    <a href="https://www.slideshare.net/secret/aKHVXj8PXiMm2"
-                                                       class="btn btn-primary"
-                                                       role="button">Slides</a>
+                                                    {%for j in range(0,
+                                                    projects_data['projects']['data_science'][i]['total_buttons'])%}
+                                                    {% for key, value in
+                                                    projects_data['projects']['data_science'][i]['buttons'][j].items()
+                                                    %}
+                                                    <a href="{{ value }}"
+                                                       style="padding-left: 30px; padding-right: 30px"
+                                                       class="btn btn-primary" role="button"> {{ key
+                                                        }} </a>
+                                                    {% endfor %}
+                                                    {%endfor%}
+                                                    <!--                                                    <a href="https://github.com/asad1996172/Predictive-Modelling-on-Stock-Prices"-->
+                                                    <!--                                                       class="btn btn-primary"-->
+                                                    <!--                                                       style="padding-left: 30px; padding-right: 30px"-->
+                                                    <!--                                                       role="button">Code</a>-->
+
 
                                                 </div>
                                             </div>
                                             <div class="col" style="padding-right: 100px">
-                                                <p class="lead mb-5">Stylometric authorship attribution aims to
-                                                    identify an anonymous or disputed document’s author
-                                                    by examining its writing style. The development of
-                                                    powerful machine learning based stylometric authorship
-                                                    attribution methods presents a serious privacy threat
-                                                    for individuals such as journalists and activists who
-                                                    wish to publish anonymously. Researchers have proposed several
-                                                    authorship
-                                                    obfuscation
-                                                    approaches that
-                                                    try to make appropriate changes (e.g. word/phrase replacements) to
-                                                    evade
-                                                    attribution while
-                                                    preserving semantics. </p>
+                                                <p class="lead mb-5"> {{
+                                                    projects_data["projects"]["data_science"][i]["description"] }}</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                {% endif %}
+                                {%endfor%}
                             </div>
 
                             <!-- Left and right controls -->
@@ -918,112 +447,109 @@
 
                             <!-- Indicators -->
                             <ul class="carousel-indicators">
+                                {%for i in range(0, projects_data["total_web_dev"])%}
+                                {% if i == 0 %}
                                 <li data-target="#demo4" data-slide-to="0" class="active"></li>
-                                <li data-target="#demo4" data-slide-to="1"></li>
+                                {% else %}
+                                <li data-target="#demo4" data-slide-to="{{ i }}"></li>
+                                {% endif %}
+                                {%endfor%}
                             </ul>
 
                             <!-- The slideshow -->
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <h3 class="mb-0">A Girl Has No Name: Automated Authorship Obfuscation using Mutant-X
-                                        (<span class="text-primary">PoPETs 2019</span>)
+                                    <h3 class="mb-0">{{ projects_data["projects"]["web_dev"][0]["name"] }}
                                     </h3>
-                                    <p class="lead mb-5"><span class="text-primary"><b>Asad Mahmood</b></span>, Faizan
-                                        Ahmed, Zubair
-                                        Shafiq,
-                                        Padmini Srinivasan and Fareed Zaffar</p>
+                                    <p class="lead mb-5"> {{ projects_data["projects"]["web_dev"][0]["short_desc"]
+                                        }}</p>
 
                                     <div class="container">
                                         <div class="row">
                                             <div class="col">
 
                                                 <div style="grid-column: 1;grid-row: 1;">
-                                                    <img src="img/mutant-X.png" alt=""
+                                                    <img src="{{ url_for('static',filename = projects_data['projects']['web_dev'][0]['image']) }}"
+                                                         alt=""
                                                          style="max-width: 100%;height: auto;">
                                                 </div>
 
                                                 <div class="text-center">
 
-                                                    <a href="https://petsymposium.org/2019/files/papers/issue4/popets-2019-0058.pdf"
-                                                       class="btn btn-primary" role="button">Paper</a>
-                                                    <a href="https://github.com/asad1996172/Mutant-X"
-                                                       class="btn btn-primary"
-                                                       role="button">Code</a>
-                                                    <a href="https://www.slideshare.net/secret/aKHVXj8PXiMm2"
-                                                       class="btn btn-primary"
-                                                       role="button">Slides</a>
+                                                    {%for j in range(0,
+                                                    projects_data['projects']['web_dev'][0]['total_buttons'])%}
+                                                    {% for key, value in
+                                                    projects_data['projects']['web_dev'][0]['buttons'][j].items()
+                                                    %}
+                                                    <a href="{{ value }}"
+                                                       style="padding-left: 30px; padding-right: 30px"
+                                                       class="btn btn-primary" role="button"> {{ key
+                                                        }} </a>
+                                                    {% endfor %}
+                                                    {%endfor%}
+                                                    <!--                                                    <a href="https://github.com/asad1996172/Predictive-Modelling-on-Stock-Prices"-->
+                                                    <!--                                                       class="btn btn-primary"-->
+                                                    <!--                                                       style="padding-left: 30px; padding-right: 30px"-->
+                                                    <!--                                                       role="button">Code</a>-->
+
 
                                                 </div>
                                             </div>
                                             <div class="col" style="padding-right: 100px">
-                                                <p class="lead mb-5">Stylometric authorship attribution aims to
-                                                    identify an anonymous or disputed document’s author
-                                                    by examining its writing style. The development of
-                                                    powerful machine learning based stylometric authorship
-                                                    attribution methods presents a serious privacy threat
-                                                    for individuals such as journalists and activists who
-                                                    wish to publish anonymously. Researchers have proposed several
-                                                    authorship
-                                                    obfuscation
-                                                    approaches that
-                                                    try to make appropriate changes (e.g. word/phrase replacements) to
-                                                    evade
-                                                    attribution while
-                                                    preserving semantics. </p>
+                                                <p class="lead mb-5"> {{
+                                                    projects_data["projects"]["web_dev"][0]["description"] }}</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                {%for i in range(0, projects_data['total_web_dev'])%}
+                                {% if i != 0 %}
                                 <div class="carousel-item">
-                                    <h3 class="mb-0">A Girl Has No Name: Automated Authorship Obfuscation using Mutant-X
-                                        (<span class="text-primary">PoPETs 2019</span>)
+                                    <h3 class="mb-0">{{ projects_data["projects"]["web_dev"][i]["name"] }}
                                     </h3>
-                                    <p class="lead mb-5"><span class="text-primary"><b>Asad Mahmood</b></span>, Faizan
-                                        Ahmed, Zubair
-                                        Shafiq,
-                                        Padmini Srinivasan and Fareed Zaffar</p>
+                                    <p class="lead mb-5"> {{ projects_data["projects"]["web_dev"][i]["short_desc"]
+                                        }}</p>
 
                                     <div class="container">
                                         <div class="row">
                                             <div class="col">
 
                                                 <div style="grid-column: 1;grid-row: 1;">
-                                                    <img src="img/monitor.png" alt=""
+                                                    <img src="{{ url_for('static',filename = projects_data['projects']['web_dev'][i]['image']) }}"
+                                                         alt=""
                                                          style="max-width: 100%;height: auto;">
                                                 </div>
 
                                                 <div class="text-center">
 
-                                                    <a href="https://petsymposium.org/2019/files/papers/issue4/popets-2019-0058.pdf"
-                                                       class="btn btn-primary" role="button">Paper</a>
-                                                    <a href="https://github.com/asad1996172/Mutant-X"
-                                                       class="btn btn-primary"
-                                                       role="button">Code</a>
-                                                    <a href="https://www.slideshare.net/secret/aKHVXj8PXiMm2"
-                                                       class="btn btn-primary"
-                                                       role="button">Slides</a>
+                                                    {%for j in range(0,
+                                                    projects_data['projects']['web_dev'][i]['total_buttons'])%}
+                                                    {% for key, value in
+                                                    projects_data['projects']['web_dev'][i]['buttons'][j].items()
+                                                    %}
+                                                    <a href="{{ value }}"
+                                                       style="padding-left: 30px; padding-right: 30px"
+                                                       class="btn btn-primary" role="button"> {{ key
+                                                        }} </a>
+                                                    {% endfor %}
+                                                    {%endfor%}
+                                                    <!--                                                    <a href="https://github.com/asad1996172/Predictive-Modelling-on-Stock-Prices"-->
+                                                    <!--                                                       class="btn btn-primary"-->
+                                                    <!--                                                       style="padding-left: 30px; padding-right: 30px"-->
+                                                    <!--                                                       role="button">Code</a>-->
+
 
                                                 </div>
                                             </div>
                                             <div class="col" style="padding-right: 100px">
-                                                <p class="lead mb-5">Stylometric authorship attribution aims to
-                                                    identify an anonymous or disputed document’s author
-                                                    by examining its writing style. The development of
-                                                    powerful machine learning based stylometric authorship
-                                                    attribution methods presents a serious privacy threat
-                                                    for individuals such as journalists and activists who
-                                                    wish to publish anonymously. Researchers have proposed several
-                                                    authorship
-                                                    obfuscation
-                                                    approaches that
-                                                    try to make appropriate changes (e.g. word/phrase replacements) to
-                                                    evade
-                                                    attribution while
-                                                    preserving semantics. </p>
+                                                <p class="lead mb-5"> {{
+                                                    projects_data["projects"]["web_dev"][i]["description"] }}</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                {% endif %}
+                                {%endfor%}
                             </div>
 
                             <!-- Left and right controls -->
@@ -1041,112 +567,109 @@
 
                             <!-- Indicators -->
                             <ul class="carousel-indicators">
+                                {%for i in range(0, projects_data["total_mob_dev"])%}
+                                {% if i == 0 %}
                                 <li data-target="#demo5" data-slide-to="0" class="active"></li>
-                                <li data-target="#demo5" data-slide-to="1"></li>
+                                {% else %}
+                                <li data-target="#demo5" data-slide-to="{{ i }}"></li>
+                                {% endif %}
+                                {%endfor%}
                             </ul>
 
                             <!-- The slideshow -->
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <h3 class="mb-0">A Girl Has No Name: Automated Authorship Obfuscation using Mutant-X
-                                        (<span class="text-primary">PoPETs 2019</span>)
+                                    <h3 class="mb-0">{{ projects_data["projects"]["mob_dev"][0]["name"] }}
                                     </h3>
-                                    <p class="lead mb-5"><span class="text-primary"><b>Asad Mahmood</b></span>, Faizan
-                                        Ahmed, Zubair
-                                        Shafiq,
-                                        Padmini Srinivasan and Fareed Zaffar</p>
+                                    <p class="lead mb-5"> {{ projects_data["projects"]["mob_dev"][0]["short_desc"]
+                                        }}</p>
 
                                     <div class="container">
                                         <div class="row">
                                             <div class="col">
 
                                                 <div style="grid-column: 1;grid-row: 1;">
-                                                    <img src="img/mutant-X.png" alt=""
+                                                    <img src="{{ url_for('static',filename = projects_data['projects']['mob_dev'][0]['image']) }}"
+                                                         alt=""
                                                          style="max-width: 100%;height: auto;">
                                                 </div>
 
                                                 <div class="text-center">
 
-                                                    <a href="https://petsymposium.org/2019/files/papers/issue4/popets-2019-0058.pdf"
-                                                       class="btn btn-primary" role="button">Paper</a>
-                                                    <a href="https://github.com/asad1996172/Mutant-X"
-                                                       class="btn btn-primary"
-                                                       role="button">Code</a>
-                                                    <a href="https://www.slideshare.net/secret/aKHVXj8PXiMm2"
-                                                       class="btn btn-primary"
-                                                       role="button">Slides</a>
+                                                    {%for j in range(0,
+                                                    projects_data['projects']['mob_dev'][0]['total_buttons'])%}
+                                                    {% for key, value in
+                                                    projects_data['projects']['mob_dev'][0]['buttons'][j].items()
+                                                    %}
+                                                    <a href="{{ value }}"
+                                                       style="padding-left: 30px; padding-right: 30px"
+                                                       class="btn btn-primary" role="button"> {{ key
+                                                        }} </a>
+                                                    {% endfor %}
+                                                    {%endfor%}
+                                                    <!--                                                    <a href="https://github.com/asad1996172/Predictive-Modelling-on-Stock-Prices"-->
+                                                    <!--                                                       class="btn btn-primary"-->
+                                                    <!--                                                       style="padding-left: 30px; padding-right: 30px"-->
+                                                    <!--                                                       role="button">Code</a>-->
+
 
                                                 </div>
                                             </div>
                                             <div class="col" style="padding-right: 100px">
-                                                <p class="lead mb-5">Stylometric authorship attribution aims to
-                                                    identify an anonymous or disputed document’s author
-                                                    by examining its writing style. The development of
-                                                    powerful machine learning based stylometric authorship
-                                                    attribution methods presents a serious privacy threat
-                                                    for individuals such as journalists and activists who
-                                                    wish to publish anonymously. Researchers have proposed several
-                                                    authorship
-                                                    obfuscation
-                                                    approaches that
-                                                    try to make appropriate changes (e.g. word/phrase replacements) to
-                                                    evade
-                                                    attribution while
-                                                    preserving semantics. </p>
+                                                <p class="lead mb-5"> {{
+                                                    projects_data["projects"]["mob_dev"][0]["description"] }}</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                {%for i in range(0, projects_data['total_mob_dev'])%}
+                                {% if i != 0 %}
                                 <div class="carousel-item">
-                                    <h3 class="mb-0">A Girl Has No Name: Automated Authorship Obfuscation using Mutant-X
-                                        (<span class="text-primary">PoPETs 2019</span>)
+                                    <h3 class="mb-0">{{ projects_data["projects"]["mob_dev"][i]["name"] }}
                                     </h3>
-                                    <p class="lead mb-5"><span class="text-primary"><b>Asad Mahmood</b></span>, Faizan
-                                        Ahmed, Zubair
-                                        Shafiq,
-                                        Padmini Srinivasan and Fareed Zaffar</p>
+                                    <p class="lead mb-5"> {{ projects_data["projects"]["mob_dev"][i]["short_desc"]
+                                        }}</p>
 
                                     <div class="container">
                                         <div class="row">
                                             <div class="col">
 
                                                 <div style="grid-column: 1;grid-row: 1;">
-                                                    <img src="img/monitor.png" alt=""
+                                                    <img src="{{ url_for('static',filename = projects_data['projects']['mob_dev'][i]['image']) }}"
+                                                         alt=""
                                                          style="max-width: 100%;height: auto;">
                                                 </div>
 
                                                 <div class="text-center">
 
-                                                    <a href="https://petsymposium.org/2019/files/papers/issue4/popets-2019-0058.pdf"
-                                                       class="btn btn-primary" role="button">Paper</a>
-                                                    <a href="https://github.com/asad1996172/Mutant-X"
-                                                       class="btn btn-primary"
-                                                       role="button">Code</a>
-                                                    <a href="https://www.slideshare.net/secret/aKHVXj8PXiMm2"
-                                                       class="btn btn-primary"
-                                                       role="button">Slides</a>
+                                                    {%for j in range(0,
+                                                    projects_data['projects']['mob_dev'][i]['total_buttons'])%}
+                                                    {% for key, value in
+                                                    projects_data['projects']['mob_dev'][i]['buttons'][j].items()
+                                                    %}
+                                                    <a href="{{ value }}"
+                                                       style="padding-left: 30px; padding-right: 30px"
+                                                       class="btn btn-primary" role="button"> {{ key
+                                                        }} </a>
+                                                    {% endfor %}
+                                                    {%endfor%}
+                                                    <!--                                                    <a href="https://github.com/asad1996172/Predictive-Modelling-on-Stock-Prices"-->
+                                                    <!--                                                       class="btn btn-primary"-->
+                                                    <!--                                                       style="padding-left: 30px; padding-right: 30px"-->
+                                                    <!--                                                       role="button">Code</a>-->
+
 
                                                 </div>
                                             </div>
                                             <div class="col" style="padding-right: 100px">
-                                                <p class="lead mb-5">Stylometric authorship attribution aims to
-                                                    identify an anonymous or disputed document’s author
-                                                    by examining its writing style. The development of
-                                                    powerful machine learning based stylometric authorship
-                                                    attribution methods presents a serious privacy threat
-                                                    for individuals such as journalists and activists who
-                                                    wish to publish anonymously. Researchers have proposed several
-                                                    authorship
-                                                    obfuscation
-                                                    approaches that
-                                                    try to make appropriate changes (e.g. word/phrase replacements) to
-                                                    evade
-                                                    attribution while
-                                                    preserving semantics. </p>
+                                                <p class="lead mb-5"> {{
+                                                    projects_data["projects"]["mob_dev"][i]["description"] }}</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                {% endif %}
+                                {%endfor%}
                             </div>
 
                             <!-- Left and right controls -->
@@ -1156,12 +679,11 @@
                             <a class="carousel-control-next" href="#demo5" data-slide="next">
                                 <span class="carousel-control-next-icon"></span>
                             </a>
-
                         </div>
                     </div>
+
                 </div>
             </div>
-
         </div>
     </section>
 
@@ -1171,95 +693,27 @@
         <div class="w-100">
             <div class="container">
                 <h2 class="mb-5">Experience</h2>
-
-                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+                {%for i in range(0, experience_data["total_experiences"])%}
+                    <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="resume-content">
-                        <h3 class="mb-0">Graduate Research Assistant</h3>
-                        <div class="subheading mb-3"><img src="img/uiowa.png" alt="" height="40px" width="40px"
-                                                          style="max-width: 100%;height: auto;padding-bottom: 10px"> The
-                            University of Iowa
+                        <h3 class="mb-0">{{ experience_data["experiences"][i]['job_title'] }}</h3>
+                        <div class="subheading mb-3"><img src="{{ url_for('static',filename = experience_data['experiences'][i]['image']) }}" alt="" height="40px" width="40px"
+                                                          style="max-width: 100%;height: auto;padding-bottom: 10px"> {{ experience_data["experiences"][i]['company'] }}
                         </div>
-                        <p>Research revolves around using Natural Language Processing and Machine Learning to enhance
-                            user
-                            privacy. Projects include: </p>
+                        <p> {{ experience_data["experiences"][i]['description'] }} </p>
                         <ul>
-                            <li>Mutant-X: An automated authorship obfuscation tool made using sentiment preserving word
-                                embeddings and genetic algorithms (GAs).
+                            {%for j in range(0, experience_data["experiences"][i]['total_projects'])%}
+                            <li> {{ experience_data["experiences"][i]['projects'][j] }}
                             </li>
-                            <li>Twitter Humans v Bots: A SVM based predictive model which, given a tweet, can classify
-                                it as
-                                written by human or bot with an accuracy of 91%.
-                            </li>
-                            <li>Obfuscation Detection: A tool which uses the power or pre-trained language models like
-                                BERT
-                                and GPT-2 to detect whether a given text is Obfuscated or not.
-                            </li>
+                            {%endfor%}
                         </ul>
                     </div>
                     <div class="resume-date text-md-right">
-                        <span class="text-primary">August 2018 - Present</span>
+                        <span class="text-primary">{{ experience_data["experiences"][i]['dates'] }}</span>
                     </div>
                 </div>
+                {%endfor%}
 
-                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="resume-content">
-                        <h3 class="mb-0">Teaching Assistant</h3>
-                        <div class="subheading mb-3"><img src="img/uiowa.png" alt="" height="40px" width="40px"
-                                                          style="max-width: 100%;height: auto;padding-bottom: 10px"> The
-                            University of Iowa
-                        </div>
-                        <p>Duties include checking assignments and leading a discussion session. Courses include:</p>
-                        <ul>
-                            <li>Computer Science Fundamentals</li>
-                            <li>Object Oriented Software Development</li>
-                            <li>Informatics Project</li>
-                        </ul>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">January 2019 - Present</span>
-                    </div>
-                </div>
-
-                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="resume-content">
-                        <h3 class="mb-0">Research Assistant</h3>
-                        <div class="subheading mb-3"><img src="img/lums.png" alt="" height="40px" width="40px"
-                                                          style="max-width: 100%;height: auto;padding-bottom: 10px">
-                            Lahore
-                            University of Management Sciences (LUMS)
-                        </div>
-                        <p>Worked under Dr. Fareed Zaffar on projects related to Data Science and Machine Learning.
-                            Projects
-                            include:</p>
-                        <ul>
-                            <li>Reverse Image Search tool using pre-trained VGG-19 and google's, im2txt model.</li>
-                            <li>Automated detection of in-appropriate video content on YouTube Kids.</li>
-                            <li>Enhancement of the ad-verification system for OLX Pakistan.</li>
-                            <li>In-game analysis of soccer matches through a proprietary dataset of events and tracking
-                                data
-                                of 6000 soccer matches across four different leagues.
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">August 2017 - March 2018</span>
-                    </div>
-                </div>
-
-                <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-                    <div class="resume-content">
-                        <h3 class="mb-0">Web Developer Intern</h3>
-                        <div class="subheading mb-3"><img src="img/tpi.jpeg" alt="" height="40px" width="40px"
-                                                          style="max-width: 100%;height: auto;padding-bottom: 10px">
-                            Technology for People Initiative (TPI) LUMS
-                        </div>
-                        <p>Worked as a backend Web Developer on a ROR based dataset visualization tool called Statistan
-                            using NoSQL (MongoDB).</p>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">June 2017 - July 2017</span>
-                    </div>
-                </div>
             </div>
         </div>
 
@@ -1278,55 +732,23 @@
                         <div class="col">
                             <div class="subheading mb-3" style="color: #0c4419">Programming Languages</div>
                             <ul class="fa-ul mb-0">
+                                {%for i in range(0, skills_data["total_programming_languages"])%}
                                 <li>
                                     <i class="fa-li fa fa-circle"></i>
-                                    Python
+                                    {{ skills_data["programming_languages"][i] }}
                                 </li>
-                                <li>
-                                    <i class="fa-li fa fa-circle"></i>
-                                    JAVA
-                                </li>
-                                <li>
-                                    <i class="fa-li fa fa-circle"></i>
-                                    C++
-                                </li>
-                                <li>
-                                    <i class="fa-li fa fa-circle"></i>
-                                    PHP
-                                </li>
-                                <li>
-                                    <i class="fa-li fa fa-circle"></i>
-                                    SQL
-                                </li>
-                                <li>
-                                    <i class="fa-li fa fa-circle"></i>
-                                    Ruby
-                                </li>
-                                <li>
-                                    <i class="fa-li fa fa-circle"></i>
-                                    Javascript
-                                </li>
+                                {% endfor %}
                             </ul>
                         </div>
                         <div class="col">
                             <div class="subheading mb-3" style="color: #0c4419">Machine Learning Libraries</div>
                             <ul class="fa-ul mb-0">
+                                {%for i in range(0, skills_data["total_ml_libs"])%}
                                 <li>
                                     <i class="fa-li fa fa-circle"></i>
-                                    Scikit-learn
+                                    {{ skills_data['ml_libs'][i] }}
                                 </li>
-                                <li>
-                                    <i class="fa-li fa fa-circle"></i>
-                                    Keras
-                                </li>
-                                <li>
-                                    <i class="fa-li fa fa-circle"></i>
-                                    PyTorch
-                                </li>
-                                <li>
-                                    <i class="fa-li fa fa-circle"></i>
-                                    R
-                                </li>
+                                {%endfor%}
 
                             </ul>
                         </div>
@@ -1338,32 +760,23 @@
                         <div class="col">
                             <div class="subheading mb-3" style="color: #0c4419">Web Frameworks</div>
                             <ul class="fa-ul mb-0">
+                                {%for i in range(0, skills_data["total_web_frameworks"])%}
                                 <li>
                                     <i class="fa-li fa fa-circle"></i>
-                                    .NET
+                                    {{ skills_data['web_frameworks'][i] }}
                                 </li>
-                                <li>
-                                    <i class="fa-li fa fa-circle"></i>
-                                    Laravel
-                                </li>
-                                <li>
-                                    <i class="fa-li fa fa-circle"></i>
-                                    ROR
-                                </li>
+                                {%endfor%}
                             </ul>
                         </div>
                         <div class="col">
                             <div class="subheading mb-3" style="color: #0c4419">Mobile Development</div>
                             <ul class="fa-ul mb-0">
+                                {%for i in range(0, skills_data["total_mob_dev"])%}
                                 <li>
                                     <i class="fa-li fa fa-circle"></i>
-                                    Android
+                                    {{ skills_data["mob_dev"][i] }}
                                 </li>
-                                <li>
-                                    <i class="fa-li fa fa-circle"></i>
-                                    Unity3D
-                                </li>
-
+                                {%endfor%}
                             </ul>
                         </div>
                     </div>
@@ -1384,45 +797,30 @@
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="bibliography">
         <div class="w-100">
             <div class="container">
-                <h2 class="mb-5">Research Papers Bibliography</h2>
+                <h2 class="mb-1">Research Papers Bibliography</h2>
+                {{ unique_tags|safe }}
+                <br>
+                <br>
                 <input class="form-control" id="myInput" type="text" placeholder="Search..">
                 <br>
                 <table class="table table-bordered table-striped">
                     <thead style="background-color: #1b561d;color: white;">
                     <tr>
                         <th>Paper</th>
-                        <th>Conference</th>
+                        <th>Published</th>
                         <th>Year</th>
-                        <th>Topics</th>
+                        <th>Tags</th>
                     </tr>
                     </thead>
                     <tbody id="myTable">
+                    {% for key,value in papers_data.iterrows() %}
                     <tr>
-                        <td><a href="https://aaai.org/ojs/index.php/ICWSM/article/view/3354">Race, Ethnicity and
-                            National Origin-Based Discrimination in Social Media and Hate Crimes across 100 U.S.
-                            Cities</a></td>
-                        <td>ICWSDM</td>
-                        <td>2019</td>
-                        <td><a
-                                class="btn btn-primary"
-                                style="padding: 0px;padding-left: 10px; padding-right: 10px; color: white"
-                                role="button">Code</a></td>
+                        <td>{{ value['paper_with_url']|safe }}</td>
+                        <td>{{ value['Published'] }}</td>
+                        <td>{{ value['Year'] }}</td>
+                        <td>{{ value['colored_tags']|safe }}</td>
                     </tr>
-                    <tr>
-                        <td>Mary</td>
-                        <td>Moe</td>
-                        <td>mary@mail.com</td>
-                    </tr>
-                    <tr>
-                        <td>July</td>
-                        <td>Dooley</td>
-                        <td>july@greatstuff.com</td>
-                    </tr>
-                    <tr>
-                        <td>Anja</td>
-                        <td>Ravendale</td>
-                        <td>a_r@test.com</td>
-                    </tr>
+                    {% endfor %}
                     </tbody>
                 </table>
 
@@ -1437,49 +835,20 @@
         <div class="w-100">
             <div class="container">
                 <h2 class="mb-5">Education</h2>
-
+                {%for i in range(0, education_data["total_education"])%}
                 <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="resume-content">
-                        <h3 class="mb-0"><img src="img/uiowa.png" alt="" height="40px" width="40px"
-                                              style="max-width: 100%;height: auto;padding-bottom: 10px"> The University
-                            of
-                            Iowa</h3>
-                        <div class="subheading mb-3">PhD in Computer Science</div>
+                        <h3 class="mb-0"><img src="{{ url_for('static',filename = education_data['education'][i]['image']) }}" alt="" height="40px" width="40px"
+                                              style="max-width: 100%;height: auto;padding-bottom: 10px"> {{ education_data['education'][i]['institution'] }}</h3>
+                        <div class="subheading mb-3">{{ education_data['education'][i]['degree'] }}</div>
 
-                        <p>GPA: 3.26</p>
+                        <p>GPA: {{ education_data['education'][i]['cgpa'] }}</p>
                     </div>
                     <div class="resume-date text-md-right">
-                        <span class="text-primary">August 2018 - Present</span>
+                        <span class="text-primary">{{ education_data['education'][i]['dates'] }}</span>
                     </div>
                 </div>
-
-                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="resume-content">
-                        <h3 class="mb-0"><img src="img/fast.png" alt="" height="40px" width="40px"
-                                              style="max-width: 100%;height: auto;padding-bottom: 10px"> National
-                            University
-                            of Computer and Emerging Science (FAST)</h3>
-                        <div class="subheading mb-3">Bachelor's in Computer Science</div>
-
-                        <p>GPA: 3.04</p>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">August 2014 - May 2018</span>
-                    </div>
-                </div>
-
-                <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-                    <div class="resume-content">
-                        <h3 class="mb-0"><img src="img/garrison.png" alt="" height="40px" width="40px"
-                                              style="max-width: 100%;height: auto;padding-bottom: 10px"> Garrison Degree
-                            College</h3>
-                        <div class="subheading mb-3">Pre-Engineering (High School)</div>
-                        <p>GPA: 3.33</p>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">August 2012 - May 2014</span>
-                    </div>
-                </div>
+                {%endfor%}
             </div>
         </div>
     </section>
