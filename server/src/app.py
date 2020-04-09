@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, send_from_directory
 import requests as rs
 import json
 import pandas as pd
+import os
 
 app = Flask(__name__)
 
@@ -18,6 +19,7 @@ def generate_colored_tags(listt, colored_tags):
 
 @app.route('/')
 def main():
+    print(os.getcwd())
     with open('about.json', 'r') as file:
         data = file.read().replace('\n', '')
     about_section_data = json.loads(data)
