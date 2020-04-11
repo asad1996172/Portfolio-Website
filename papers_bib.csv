@@ -1,0 +1,12 @@
+Paper,URL,Published,Year,Tags
+Spectral Signatures in Backdoor Attacks,https://papers.nips.cc/paper/8024-spectral-signatures-in-backdoor-attacks.pdf,NeurIPS,2018,Backdoor || Detection
+Detecting Backdoor Attacks on Deep Neural Networks by Activation Clustering,http://ceur-ws.org/Vol-2301/paper_18.pdf,SafeAI,2019,Backdoor || Detection
+Neural Cleanse: Identifying and Mitigating Backdoor Attacks in Neural Networks,http://people.cs.uchicago.edu/~ravenben/publications/pdf/backdoor-sp19.pdf,Oakland,2019,Backdoor || Detection
+ABS: Scanning Neural Networks for Back-doors by Artificial Brain Stimulation,https://www.cs.purdue.edu/homes/taog/docs/CCS19.pdf,CCS,2019,Backdoor || Detection
+Fine-Pruning: Defending Against Backdooring Attacks on Deep Neural Networks,https://arxiv.org/pdf/1805.12185.pdf,Arxiv,2018,Backdoor || Detection
+STRIP: A Defence Against Trojan Attacks on Deep Neural Networks,https://arxiv.org/pdf/1902.06531v1.pdf,ACSAC,2019,Backdoor || Detection
+DeepInspect: A Black-box Trojan Detection and Mitigation Framework for Deep Neural Networks,https://www.ijcai.org/Proceedings/2019/0647.pdf,IJCAI,2019,Backdoor || Detection
+Model Agnostic Defence against Backdoor Attacks in Machine Learning,https://arxiv.org/pdf/1908.02203.pdf,Arxiv,2019,Backdoor || Detection
+BadNets: Identifying Vulnerabilities in the Machine Learning Model Supply Chain,https://arxiv.org/pdf/1708.06733.pdf,Arxiv,2019,Backdoor || Attack
+Trojaning Attack on Neural Networks,https://www.cs.purdue.edu/homes/ma229/papers/NDSS18.TNN.pdf,NDSS,2018,Backdoor || Attack
+Stateful Detection of Black-Box Adversarial Attacks,https://arxiv.org/pdf/1907.05587.pdf,Arxiv,2019,Adversarial || Attack || Detection || Black Box
