@@ -39,9 +39,6 @@
             "buttons": [
                 {
                     "paper": "http://www.dei.unipd.it/~ferro/CLEF-WN-Drafts/CLEF2019/paper_253.pdf"
-                },
-                {
-                    "code": ""
                 }
             ],
             "image": "img/monitor.png"

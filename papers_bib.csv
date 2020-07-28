@@ -10,3 +10,24 @@ Model Agnostic Defence against Backdoor Attacks in Machine Learning,https://arxi
 BadNets: Identifying Vulnerabilities in the Machine Learning Model Supply Chain,https://arxiv.org/pdf/1708.06733.pdf,Arxiv,2019,Backdoor || Attack
 Trojaning Attack on Neural Networks,https://www.cs.purdue.edu/homes/ma229/papers/NDSS18.TNN.pdf,NDSS,2018,Backdoor || Attack
 Stateful Detection of Black-Box Adversarial Attacks,https://arxiv.org/pdf/1907.05587.pdf,Arxiv,2019,Adversarial || Attack || Detection || Black Box
+PRADA: Protecting Against DNN Model Stealing Attacks,https://arxiv.org/pdf/1805.02628.pdf,IEEE,2019,Model Extraction || Attack || Detection || Black Box
+Model Extraction Warning in MLaaS Paradigm,https://arxiv.org/pdf/1711.07221.pdf,ACSAC,2018,Model Extraction || Attack || Detection || Black Box
+Inference in an Authorship Problem,https://amstat.tandfonline.com/doi/abs/10.1080/01621459.1963.10500849?casa_token=k692RvxQF1UAAAAA:E3e5ennbXCDxRpJ6_0mCb192xuWEL30sfT3JyZ402lG-NO53mU-o5WJujXWelbBNARPtkuQeBnC2iA#.XqaGwmhKiUk,JASA,1963,Authorship Attribution
+The Federalist revisited: New directions in authorship attribution,http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.890.8767&rep=rep1&type=pdf,L&LC,1995,Authorship Attribution
+An algorithm for identifying authors using synonyms,https://ieeexplore.ieee.org/abstract/document/4351431,ENC,2007,Authorship Attribution
+Writeprints: A stylometric approach to identity-level identification and similarity detection in cyberspace,https://dl.acm.org/doi/abs/10.1145/1344411.1344413,ACM-TOIS,2008,Authorship Attribution
+Adversarial stylometry: Circumventing authorship recognition to preserve privacy and anonymity,https://dl.acm.org/doi/abs/10.1145/2382448.2382450,ACM-TOIS,2012,Authorship Attribution
+On the feasibility of internet-scale author identification,https://ieeexplore.ieee.org/abstract/document/6234420,IEEE,2012,Authorship Attribution
+Use Fewer Instances of the Letter “i”: Toward Writing Style Anonymization,https://link.springer.com/chapter/10.1007/978-3-642-31680-7_16,PoPETs,2012,Authorship Attribution
+Doppelgänger Finder: Taking Stylometry to the Underground,https://ieeexplore.ieee.org/abstract/document/6956566,IEEE,2014,Authorship Attribution
+Identifying Content Originator in Social Networks,https://ieeexplore.ieee.org/abstract/document/8255074,GLOBECOM,2017,Authorship Attribution
+Stylometric Linkability of Tweets,https://dl.acm.org/doi/abs/10.1145/2665943.2665966,WPES,2014,Authorship Attribution
+An Integrated Machine Learning Approach for Extrinsic Plagiarism Detection,https://ieeexplore.ieee.org/abstract/document/7930648,DeSE,2016,Authorship Attribution
+Accurate Detection of Automatically Spun Content via Stylometric Analysis,https://ieeexplore.ieee.org/abstract/document/8215515,ICDM,2017,Authorship Attribution
+Universal language model fine-tuning for text classification,https://arxiv.org/pdf/1801.06146.pdf?source=post_page---------------------------,Arxiv,2018,Authorship Attribution
+Character-level and Multi-channel Convolutional Neural Networks for Large-scale Authorship Attribution,https://arxiv.org/pdf/1609.06686.pdf,Arxiv,2016,Authorship Attribution
+Effects of Age and Gender on Blogging,https://www.aaai.org/Papers/Symposia/Spring/2006/SS-06-03/SS06-03-039.pdf,AAAI,2006,Authorship Attribution
+Understanding and explaining Delta measures for authorship attribution,https://academic.oup.com/dsh/article/32/suppl_2/ii4/3865676,DSH,2017,Authorship Attribution
+A survey of modern authorship attribution methods,https://onlinelibrary.wiley.com/doi/epdf/10.1002/asi.21001,ASIS&T,2008,Authorship Attribution
+A Novel Approach for Authorship Verification,https://link.springer.com/chapter/10.1007/978-981-15-1097-7_37,AISC,2020,Authorship Attribution
+CAG : Stylometric Authorship Attribution of Multi-Author Documents Using a Co-Authorship Graph,https://ieeexplore.ieee.org/document/8962080,IEEE,2020,Authorship Attribution

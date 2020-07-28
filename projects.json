@@ -30,6 +30,18 @@
         ],
         "mob_dev": [
             {
+                "name": "Script Tracker",
+                "short_desc": "Flutter based application for tracking status of coding scripts.",
+                "description": "Script Tracker provides an Android and Ios mobile application based dashboard to perform live tracking of your scripts. Currently this is only supporting python. Users can track the progress of their scripts from anywhere. Mobile applications are created using Flutter platform and server side is managed using Firebase.",
+                "total_buttons": 1,
+                "buttons": [
+                    {
+                        "code": "https://github.com/asad1996172/Script-Tracker"
+                    }
+                ],
+                "image": "img/script_tracker.png"
+            },
+            {
                 "name": "Android Custom Keyboard",
                 "short_desc": "Android based URDU custom keyboard application.",
                 "description": "This code is a implementation of a custom keyboard for android which extends from InputMethodService and KeyboardView. It has all the functionality of the traditional keyboard like different layout for numeric keys, more characters on long press etc. I used Urdu language for this one but it can be modified for other languages as well. To do that you just need to tweak some files in res/layout. Here you can change the layout of keyboard, add different key bindings and other things as well.",
