@@ -113,7 +113,7 @@ if __name__ == '__main__':
     server = Process(target=app.run)
     server.start()
 
-    chrome_driver = "/usr/local/bin/chromedriver"
+    chrome_driver = "/Users/asadmahmood/Projects/Portfolio-Website/chromedriver"
     os.environ["webdriver.chrome.driver"] = chrome_driver
     driver = webdriver.Chrome(chrome_driver)
     driver.get("http://127.0.0.1:5000/ ")

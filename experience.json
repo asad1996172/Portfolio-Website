@@ -27,6 +27,19 @@
             "dates": "January 2019 - Present"
         },
         {
+            "job_title": "AI/ML Engineer Intern",
+            "image": "img/gsk.png",
+            "company": "GlaxoSmithKline (GSK)",
+            "description": "Worked under Anne Cocos on tasks related to Information Extraction and Machine Learning which include:",
+            "total_projects": 3,
+            "projects": [
+                "Designing and implementing a pipeline for fine-tuning BioBERT on Named Entity Recognition (NER) task.",
+                "Adding BioBERT models in the existing information extraction pipeline and comparing its performance with SciSpacy.",
+                "Adding Metamap Entity Linking to existing API."
+            ],
+            "dates": "May 2020 - August 2020"
+        },
+        {
             "job_title": "Research Assistant",
             "image": "img/lums.png",
             "company": "Lahore University of Management Sciences (LUMS)",
