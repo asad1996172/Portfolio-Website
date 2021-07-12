@@ -8,7 +8,8 @@
     overflow-y: scroll;
     height:500px;
     width: auto;
-    background-image: linear-gradient(rgba(255,255,0,0), rgba(193,193,193,0.29), rgba(0,255,48,0.02));
+    border-radius: 25px;
+    background-image: linear-gradient(#28a74538, rgba(193,193,193,0.29), rgba(0,255,48,0.02));
 }
 
 #highlight_date {
@@ -16,5 +17,15 @@
 }
 
 #highlights_list {
-    padding-top: 5px;
+    padding-top: 15px;
+    padding-right: 15px;
+}
+
+#highlights-heading {
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+#social-media{
+    margin-bottom: 5px;
 }
