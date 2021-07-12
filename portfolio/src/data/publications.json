@@ -1,0 +1,71 @@
+{
+    "papers": [
+        {
+            "name": "A Girl Has No Name: Automated Authorship Obfuscation using Mutant-X",
+            "conference_year": "PoPETs 2019",
+            "authors": [
+                "Asad Mahmood, ",
+                "Faizan Ahmed, ",
+                "Zubair Shafiq, ",
+                "Padmini Srinivasan ",
+                "and Fareed Zaffar"
+            ],
+            "total_authors": 5,
+            "description": "Stylometric authorship attribution aims to identify an anonymous or disputed document\u2019s author by examining its writing style. The development of powerful machine learning based stylometric authorship attribution methods presents a serious privacy threat for individuals such as journalists and activists who wish to publish anonymously. To counter these, in this paper, we presented an automated authorship obfuscation tool called Mutant-X which uses genetic algorithms (GAs) and sentiment preserving word embeddings.",
+            "total_buttons": 3,
+            "buttons": [
+                {
+                    "paper": "https://petsymposium.org/2019/files/papers/issue4/popets-2019-0058.pdf"
+                },
+                {
+                    "code": "https://github.com/asad1996172/Mutant-X"
+                },
+                {
+                    "slides": "https://www.slideshare.net/secret/aKHVXj8PXiMm2"
+                }
+            ],
+            "image": "/assets/img/mutant-X.png"
+        },
+        {
+            "name": "A Girl Has A Name: Detecting Authorship Obfuscation",
+            "conference_year": "ACL 2020",
+            "authors": [
+                "Asad Mahmood, ",
+                "Zubair Shafiq, ",
+                "and Padmini Srinivasan"
+            ],
+            "total_authors": 3,
+            "description": "Authorship attribution aims to identify the author of a text based on the stylometric analysis. Authorship obfuscation, on the other hand, aims to protect against authorship attribution by modifying a text’s style. In this paper, we evaluate the stealthiness of state-of-the-art authorship obfuscation methods under an adversarial threat model. We show that the existing authorship obfuscation methods are not stealthy as their obfuscated texts can be identified with an average F1 score of 0.87. The reason for the lack of stealthiness is that these obfuscators degrade text smoothness, as ascertained by neural language models, in a detectable manner.",
+            "total_buttons": 3,
+            "buttons": [
+                {
+                    "paper": "https://www.aclweb.org/anthology/2020.acl-main.203.pdf"
+                },
+                {
+                    "code": "https://github.com/asad1996172/Obfuscation-Detection"
+                },
+                {
+                    "slides": "https://www.slideshare.net/AsadMahmood34/a-girl-has-a-name-detecting-authorship-obfuscation-1"
+                }
+            ],
+            "image": "/assets/img/obfuscation_detection.png"
+        },
+        {
+            "name": "Twitter Bots and Gender Detection using Tf-idf",
+            "conference_year": "CLEF 2019",
+            "authors": [
+                "Asad Mahmood ",
+                "and Padmini Srinivasan"
+            ],
+            "total_authors": 2,
+            "description": "This paper presents a model that can perform bots and gender detection on Twitter using just the tweets from the respective Twitter user. We show that a simple frequency based approach with a machine learning algorithm i.e., SVM can achieve high accuracy if the preprocessing is done right. In English language. our model detects bots with an accuracy of 91% and gender with an accuracy of 82%. Main strength of this model is its simplicity along-with the ease with which it can be used with other languages.",
+            "total_buttons": 1,
+            "buttons": [
+                {
+                    "paper": "http://www.dei.unipd.it/~ferro/CLEF-WN-Drafts/CLEF2019/paper_253.pdf"
+                }
+            ],
+            "image": "assets/img/twitterbots.png"
+        }
+    ]
+}
