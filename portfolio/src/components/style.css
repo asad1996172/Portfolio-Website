@@ -8,8 +8,8 @@
     overflow-y: scroll;
     height:500px;
     width: auto;
-    border-radius: 25px;
-    background-image: linear-gradient(#28a74538, rgba(193,193,193,0.29), rgba(0,255,48,0.02));
+    border-radius: 20px;
+    background-image: linear-gradient(#28a74538, #28a74621, rgba(0,255,48,0.02));
 }
 
 #highlight_date {
