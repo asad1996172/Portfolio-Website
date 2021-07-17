@@ -54,7 +54,7 @@ const Publications = () => {
                                                             }
                                                         </div>
                                                     </div>
-                                                    <div className="col" id="desc-style">
+                                                    <div className="col d-none d-sm-block" id="desc-style">
                                                         <p className="lead mb-5"> {item["description"]} </p>
                                                     </div>
                                                 </div>
