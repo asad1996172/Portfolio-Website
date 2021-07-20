@@ -1,5 +1,5 @@
 import React from 'react'
-import data from '../data/publications.json';
+import data from '../../../data/publications.json';
 
 const Publications = () => {
     return (
@@ -16,7 +16,6 @@ const Publications = () => {
                         </ul>
                         <div className="carousel-inner">
                             {
-                               
                                 data["papers"].map((item, key) => 
                                     {
                                         var call_name=""
