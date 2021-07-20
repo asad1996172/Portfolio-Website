@@ -10,7 +10,7 @@ const AboutContent = () => {
             </h1>
             <div className="lead mb-5">
                 <div className="row">
-                    <div className="col-10">
+                    <div className="col-md-10">
                         <a href={"mailto:" + data["email_address"]}>
                             <div className="row">
                                 <div className="col-1 hidden-xs"><i className="fas fa-envelope"></i></div>
@@ -21,6 +21,7 @@ const AboutContent = () => {
                             <div className="col-1 hidden-xs"><i className="fas fa-phone-alt"></i></div>
                             <div className="col">{data["mobile_number"]}</div>
                         </div>
+                        <br />
                     </div>
                     <div className="col">
                         <a href={data["resume_path"]}

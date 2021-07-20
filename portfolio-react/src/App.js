@@ -1,6 +1,7 @@
 import About from "./components/sections/about/about";
 import Publications from "./components/sections/publications/publications";
 import SideNavbar from "./components/sidebar/side_navbar";
+import Helmet from "react-helmet";
 
 function App() {
   return (
@@ -12,6 +13,9 @@ function App() {
         <Publications />
         <hr class="m-0"></hr>
       </div>
+      <Helmet>
+        <script src="./assets/js/resume.min.js"></script>
+      </Helmet>
     </div>
   );
 }

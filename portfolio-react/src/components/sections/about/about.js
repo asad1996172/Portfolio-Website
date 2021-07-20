@@ -9,7 +9,7 @@ const About = () => {
             <div className="w-100">
                 <div className="container">
                     <div className="row">
-                        <div className="col-8">
+                        <div className="col-md-8">
                            <AboutContent />
                         </div>
                         <div className="col">
