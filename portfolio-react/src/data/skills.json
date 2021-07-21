@@ -1,0 +1,30 @@
+{
+    "programming_languages": [
+        "Python",
+        "JAVA",
+        "C++",
+        "PHP",
+        "SQL",
+        "Ruby",
+        "Javascript",
+        "DART",
+        "R"
+    ],
+    "ml_libs": [
+        "Scikit-learn",
+        "Keras",
+        "PyTorch"
+    ],
+    "web_frameworks": [
+        ".NET",
+        "Laravel",
+        "ROR",
+        "ReactJS",
+        "MERN"
+    ],
+    "mob_dev": [
+        "Android",
+        "Unity3D",
+        "Flutter"
+    ]
+}

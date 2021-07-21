@@ -20,9 +20,6 @@ const SidebarContent = () => {
                     <a className="nav-link js-scroll-trigger" href="#skills">SKILLS</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link js-scroll-trigger" href="#bibliography">PAPERS BIB.</a>
-                </li>
-                <li className="nav-item">
                     <a className="nav-link js-scroll-trigger" href="#education">EDUCATION</a>
                 </li>
             </ul>

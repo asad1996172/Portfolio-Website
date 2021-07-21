@@ -84,3 +84,11 @@
 #carousel_style{
     margin-top: 25px;
 }
+
+#experience_img_style{
+    max-width: 100%;height: auto;padding-bottom: 10px
+}
+
+#skills_heading{
+    color: #0c4419
+}
