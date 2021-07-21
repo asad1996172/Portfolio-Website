@@ -2,6 +2,7 @@ import About from "./components/sections/about/about";
 import Publications from "./components/sections/publications/publications";
 import SideNavbar from "./components/sidebar/side_navbar";
 import Helmet from "react-helmet";
+import Projects from "./components/sections/projects/projects";
 
 function App() {
   return (
@@ -11,6 +12,8 @@ function App() {
         <About />
         <hr class="m-0"></hr>
         <Publications />
+        <hr class="m-0"></hr>
+        <Projects />
         <hr class="m-0"></hr>
       </div>
       <Helmet>

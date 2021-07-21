@@ -1,0 +1,82 @@
+{
+    "projects": {
+        "data_science": [
+            {
+                "name": "Predictive Modelling on Stocks Data",
+                "short_desc": "Flask application that trains different ML Models on stock prices and then show it on a plot.",
+                "description": "This flask based tool compares the predictive modelling power of different Machine/Deep Learning models. For dataset, i have opening, high, low and closing values for different stocks like AAL, AAP, AAPL. Then to train different models, tool provides with a bunch of options like Random Forests, K Nearest Neighbors, SVM, LSTM etc.. Models are implemented using scikit-learn and keras. Performance of each chosen model is shown using Chart.js library.",
+                "buttons":{
+                    "code": "https://github.com/asad1996172/Predictive-Modelling-on-Stock-Prices"
+                },
+                "image": "./assets/img/stocks.png"
+            }
+        ],
+        "web_dev": [
+            {
+                "name": "Hotel Management System (HMS) Web Application",
+                "short_desc": "A PHP Laravel based web application for hotel management.",
+                "description": "It's a hotel management web application with 3 user types. Customer, person visiting the website for information or booking. This could be guest or a person with their own profile. Then there is manager, who is supposed to add rooms information and lastly there is admin, whose job is to approve tasks done by manager. Every user has their own constraints and permissions have been implemented accordingly.",
+                "buttons":{
+                    "code": "https://github.com/asad1996172/HMS"
+                },
+                "image": "./assets/img/hms.png"
+            },
+            {
+                "name": "Developers Social Media Web Application",
+                "short_desc": "A Node based web application for developers, built using MERN stack.",
+                "description": "It's a social media web application build using the MERN stack. It has the functionality of SignUp/SignIn, creating/delete profiles, Add/remove Education, Add/remove Experience and Post/delete comments/posts. It also has the functionality of liking/unliking posts. Users can also view the top 5 GitHub repos of each of the developers signed up on this platform.",
+                "buttons":{
+                    "code": "https://github.com/asad1996172/Developers-Social-Media"
+                },
+                "image": "./assets/img/codersapp.png"
+            }
+        ],
+        "mob_dev": [
+            {
+                "name": "Script Tracker",
+                "short_desc": "Flutter based application for tracking status of coding scripts.",
+                "description": "Script Tracker provides an Android and Ios mobile application based dashboard to perform live tracking of your scripts. Currently this is only supporting python. Users can track the progress of their scripts from anywhere. Mobile applications are created using Flutter platform and server side is managed using Firebase.",
+                "buttons": {
+                    "code": "https://github.com/asad1996172/Script-Tracker"
+                },
+                "image": "./assets/img/script_tracker.png"
+            },
+            {
+                "name": "Android Custom Keyboard",
+                "short_desc": "Android based URDU custom keyboard application.",
+                "description": "This code is a implementation of a custom keyboard for android which extends from InputMethodService and KeyboardView. It has all the functionality of the traditional keyboard like different layout for numeric keys, more characters on long press etc. I used Urdu language for this one but it can be modified for other languages as well. To do that you just need to tweak some files in res/layout. Here you can change the layout of keyboard, add different key bindings and other things as well.",
+                "buttons": {
+                    "code": "https://github.com/asad1996172/CustomKeyboard"
+                },
+                "image": "./assets/img/keyboard.png"
+            },
+            {
+                "name": "Quotastic",
+                "short_desc": "Android based application showing quotes.",
+                "description": "This is a simple Quotes reading android application. Quotes are pre saved into the database using SQLite. Once the application starts, user can read different quotes by pressing the 'GO' button. This button chooses a quote from available quotes randomly and shows it. This code can be extended to learn from user behaviour and then show quotes accordingly e.g., it can learn that you are trying to stay physically active 30 minutes a day and then show you quotes motivating towards fitness.",
+                "buttons": {
+                    "code": "https://github.com/asad1996172/QuoteTastic"
+                },
+                "image": "./assets/img/quote.png"
+            },
+            {
+                "name": "Kids Learning Application",
+                "short_desc": "Android based kids learning application following HCI rules.",
+                "description": "This application was created as a project in HCI course. The task in hand was to create a learning application for kids having ages in the range of 4 - 7. Application was supposed to perform three different tasks. First, provided learning content, second, take quiz related to that content and third, show a report card.",
+                "buttons": {
+                    "code": "https://github.com/asad1996172/kids"
+                },
+                "image": "./assets/img/kids.png"
+            },
+            {
+                "name": "Dodgy Plane",
+                "short_desc": "Unity3D based game.",
+                "description": "This repository contains the code for a Unity3D based android game. Dodgy Plane is a simple game with only two controls. The player can steer the plane either to the left or to the right. Steering is done both to save the plane from obstacles and collect points. All the graphics used in the game were also designed by me using Adobe Photoshop.",
+                "buttons": {
+                    "code": "https://github.com/asad1996172/dodgy-bird"
+                },
+                "image": "./assets/img/dodgy.png"
+            }
+        ]
+    }
+}
