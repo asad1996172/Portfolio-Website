@@ -1,0 +1,25 @@
+{
+    "education": [
+        {
+            "institution": "The University of Iowa",
+            "image": "/assets/img/uiowa.png",
+            "degree": "Masters in Computer Science",
+            "cgpa": "3.41",
+            "dates": "August 2018 - May 2021"
+        },
+        {
+            "institution": "National University of Computer and Emerging Science (FAST)",
+            "image": "/assets/img/fast.png",
+            "degree": "Bachelor's in Computer Science",
+            "cgpa": "3.04",
+            "dates": "August 2014 - May 2018"
+        },
+        {
+            "institution": "Garrison Degree College",
+            "image": "/assets/img/garrison.png",
+            "degree": "Pre-Engineering (High School)",
+            "cgpa": "3.33",
+            "dates": "August 2012 - May 2014"
+        }
+    ]
+}

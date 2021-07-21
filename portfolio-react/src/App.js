@@ -5,6 +5,7 @@ import Helmet from "react-helmet";
 import Projects from "./components/sections/projects/projects";
 import Experience from "./components/sections/experience/experience";
 import Skills from "./components/sections/skills";
+import Education from "./components/sections/education/education";
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
         <Experience />
         <hr class="m-0"></hr>
         <Skills />
+        <hr class="m-0"></hr>
+        <Education />
         <hr class="m-0"></hr>
       </div>
       <Helmet>
