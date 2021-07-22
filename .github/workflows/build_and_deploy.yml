@@ -27,6 +27,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: npm build and test
       run: |
+        npm install
         npm run build
     - name: Archive Build
       uses: actions/upload-artifact@v2
