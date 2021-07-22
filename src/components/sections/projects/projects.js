@@ -10,13 +10,13 @@ const Projects = () => {
             <div className="w-100">
                 <div className="container">
                     <ul class="nav nav-pills">
-                        <li class="active">
-                            <a class="btn btn-primary" role="button" data-toggle="pill" href="#data_science" id="subject_style">
-                                Data Science</a>
-                        </li>
                         <li>
                             <a class="btn btn-primary" role="button" data-toggle="pill" href="#web_dev" id="subject_style">
                                 Web Development</a>
+                        </li>
+                        <li class="active">
+                            <a class="btn btn-primary" role="button" data-toggle="pill" href="#data_science" id="subject_style">
+                                Data Science</a>
                         </li>
                         <li>
                             <a class="btn btn-primary" role="button" data-toggle="pill" href="#mob_dev" id="subject_style">
@@ -24,10 +24,10 @@ const Projects = () => {
                         </li>
                     </ul>
                     <div class="tab-content">
-                        <div id="data_science" class="tab-pane active">
+                        <div id="web_dev" class="tab-pane active">
                             <Carousel id="carousel_style">   
                                 {
-                                    data["projects"]["data_science"].map((item, key) => 
+                                    data["projects"]["web_dev"].map((item, key) => 
                                         {
                                             return <Carousel.Item>
                                                         <CarouselItemContent 
@@ -43,10 +43,10 @@ const Projects = () => {
                                 }
                             </Carousel>
                         </div>
-                        <div id="web_dev" class="tab-pane fade">
+                        <div id="data_science" class="tab-pane fade">
                             <Carousel id="carousel_style">   
                                 {
-                                    data["projects"]["web_dev"].map((item, key) => 
+                                    data["projects"]["data_science"].map((item, key) => 
                                         {
                                             return <Carousel.Item>
                                                         <CarouselItemContent 
