@@ -1,5 +1,2 @@
 # Portfolio-Website-React
 Portfolio website created using React
-
-firebase-token
-1//06tzwHoKohAntCgYIARAAGAYSNwF-L9IrAVXzYMxL_zzSRrGNvc_s-Y5WhewoakU2e6o-67RWWNOuDwKKxgWq0hgdqLemOv3IsB0
