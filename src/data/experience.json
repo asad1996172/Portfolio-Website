@@ -1,28 +1,13 @@
 {
     "experiences": [
         {
-            "job_title": "Graduate Research Assistant",
-            "image": "./assets/img/uiowa.png",
-            "company": "The University of Iowa",
-            "description": "Research revolves around using Natural Language Processing and Machine Learning to enhance user privacy. Projects include:",
+            "job_title": "AI/ML Engineer - NLP",
+            "image": "./assets/img/gsk.png",
+            "company": "GlaxoSmithKline (GSK)",
+            "description": "",
             "projects": [
-                "Mutant-X: An automated authorship obfuscation tool made using sentiment preserving word embeddings and genetic algorithms (GAs).",
-                "Twitter Humans v Bots: A SVM based predictive model which, given a tweet, can classify it as written by human or bot with an accuracy of 91%.",
-                "Obfuscation Detection: A tool which uses the power or pre-trained language models like BERT and GPT-2 to detect whether a given text is Obfuscated or not."
             ],
-            "dates": "August 2018 - Present"
-        },
-        {
-            "job_title": "Teaching Assistant",
-            "image": "./assets/img/uiowa.png",
-            "company": "The University of Iowa",
-            "description": "Duties include checking assignments and leading a discussion session. Courses include:",
-            "projects": [
-                "Computer Science Fundamentals",
-                "Object Oriented Software Development",
-                "Informatics Project"
-            ],
-            "dates": "January 2019 - Present"
+            "dates": "July 2021 - Present"
         },
         {
             "job_title": "AI/ML Engineer Intern",
@@ -35,6 +20,32 @@
                 "Adding Metamap Entity Linking to existing API."
             ],
             "dates": "May 2020 - August 2020"
+        },
+        {
+            "job_title": "Teaching Assistant",
+            "image": "./assets/img/uiowa.png",
+            "company": "The University of Iowa",
+            "description": "Duties include checking assignments and leading a discussion session. Courses include:",
+            "projects": [
+                "Computer Science Fundamentals",
+                "Object Oriented Software Development",
+                "Informatics Project",
+                "Health Data Analytics",
+                "Research Methods in Human Computer Interaction"
+            ],
+            "dates": "January 2019 - May 2021"
+        },
+        {
+            "job_title": "Graduate Research Assistant",
+            "image": "./assets/img/uiowa.png",
+            "company": "The University of Iowa",
+            "description": "Research revolves around using Natural Language Processing and Machine Learning to enhance user privacy. Projects include:",
+            "projects": [
+                "Mutant-X: An automated authorship obfuscation tool made using sentiment preserving word embeddings and genetic algorithms (GAs).",
+                "Twitter Humans v Bots: A SVM based predictive model which, given a tweet, can classify it as written by human or bot with an accuracy of 91%.",
+                "Obfuscation Detection: A tool which uses the power or pre-trained language models like BERT and GPT-2 to detect whether a given text is Obfuscated or not."
+            ],
+            "dates": "August 2018 - September 2020"
         },
         {
             "job_title": "Research Assistant",
