@@ -22,6 +22,15 @@
                 "image": "./assets/img/hms.png"
             },
             {
+                "name": "Portfolio Website",
+                "short_desc": "One page react based portfolio website.",
+                "description": "This website contains different sections like About, Projects, Skills, Education etc. All data to these sections is taken from src/data folder. You can changed the json files in this folder to make this your own portfolio website. This repo also contain Github Action to upload the application to firebase on every push to main branch.",
+                "buttons":{
+                    "code": "https://github.com/asad1996172/Portfolio-Website-React"
+                },
+                "image": "./assets/img/portfolio.png"
+            },
+            {
                 "name": "Developers Social Media Web Application",
                 "short_desc": "A Node based web application for developers, built using MERN stack.",
                 "description": "It's a social media web application build using the MERN stack. It has the functionality of SignUp/SignIn, creating/delete profiles, Add/remove Education, Add/remove Experience and Post/delete comments/posts. It also has the functionality of liking/unliking posts. Users can also view the top 5 GitHub repos of each of the developers signed up on this platform.",
