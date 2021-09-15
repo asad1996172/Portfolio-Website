@@ -1,0 +1,18 @@
+export ZSH="/root/.oh-my-zsh"
+ZSH_THEME="spaceship"
+
+DISABLE_AUTO_UPDATE="true"
+
+plugins=( 
+    zsh-autosuggestions
+)
+
+source $ZSH/oh-my-zsh.sh
+
+SPACESHIP_PROMPT_ADD_NEWLINE="true"
+SPACESHIP_CHAR_SUFFIX=("\uf296  ")
+SPACESHIP_CHAR_COLOR_SUCCESS="yellow"
+SPACESHIP_PROMPT_DEFAULT_PREFIX="$USER"
+SPACESHIP_PROMPT_FIRST_PREFIX_SHOW="true"
+SPACESHIP_BATTERY_SHOW="true"
+SPACESHIP_USER_SHOW="false"
