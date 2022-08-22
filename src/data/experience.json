@@ -1,12 +1,25 @@
 {
   "experiences": [
     {
+      "job_title": "Software Development Engineer (SDE)",
+      "image": "./assets/img/amazon.png",
+      "company": "Amazon",
+      "description": "",
+      "projects": [],
+      "dates": "July 2022 - Present"
+    },
+    {
       "job_title": "AI/ML Engineer - NLP",
       "image": "./assets/img/gsk.png",
       "company": "GlaxoSmithKline (GSK)",
-      "description": "",
-      "projects": [],
-      "dates": "July 2021 - Present"
+      "description": "Worked on the following things in Knowledge Graph Project:",
+      "projects": [
+        "React based frontend application using typescript. This app contained a search engine, Named Entity Recognition (NER) and Relation Extraction (RE) data collection tool and a trained model comparison tool. Semantic UI react function based components were used for frontend and Recoil JS was used to maintain state in the app.",
+        "Python Django based backend following Repository Design Pattern, that provided all the necessary APIs to different teams.",
+        "NLP Pipeline consisting of different microservices which communicated using Kafka. These microservices were deployed on a Kubernetes cluster managed by Rancher. I used Kafka Exporter to monitor the progress of NLP Pipeline on a Grafana dashboard. I also scaled the processing capacity of NLP Pipeline from 4000 docs/week to 1.5 mil docs/week.",
+        "Storing the NLP Pipeline annotated documents in Neo4J graph database (upto 26 billion nodes and 27 billion relations) and used Cypher Query Language (CQL) for queries."
+      ],
+      "dates": "July 2021 - July 2022"
     },
     {
       "job_title": "AI/ML Engineer Intern",
