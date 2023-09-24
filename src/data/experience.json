@@ -1,12 +1,40 @@
 {
   "experiences": [
     {
+      "job_title": "Senior Software Engineer",
+      "image": "./assets/img/cink.jpeg",
+      "company": "Clinical Ink",
+      "description": "Senior Software Engineer for the BrainBaseline Core Platform team. Day-to-day work involves:",
+      "projects": [
+        "Data report and analysis for insights from clinical trial mobile applications",
+        "Working with GitLab, Python, AWS, Snowflake, JIRA"
+      ],
+      "dates": "June 2023 - Present"
+    },
+    {
+      "job_title": "Software Engineer",
+      "image": "./assets/img/propay.jpeg",
+      "company": "ProPay",
+      "description": "Worked on the following things as part of the software engineering team:",
+      "projects": [
+        "Developed and maintained a member-based platform using PHP and the Laravel framework, allowing seamless signup for services and automated fee payments.",
+        "Worked on a Unified payment platform, enhancing the user experience by enabling members to pay fees using multiple payment options through a consistent user interface and a standardized set of APIs.",
+        "Leveraged Python and Kafka to optimize communication between services, exploring the replacement of the existing SQS method, resulting in significantly faster and more efficient data transfer.",
+        "Optimized and revamped UI screens for a Flutter-based mobile application."
+      ],
+      "dates": "March 2023 - June 2023"
+    },
+    {
       "job_title": "Software Development Engineer (SDE)",
       "image": "./assets/img/amazon.png",
       "company": "Amazon",
-      "description": "",
-      "projects": [],
-      "dates": "July 2022 - Present"
+      "description": "Worked on the following things as part of Physical Stores team:",
+      "projects": [
+        "React based frontend and Java based backend to provide receipt lookup feature for mobile wallet launch in 3P physical stores.",
+        "Bringing up an internal service in Singapore region using pipelines.",
+        "AWS services including CloudFormation, CloudWatch, DynamoDB, OpenSearch, API Gateway, Lambda etc."
+      ],
+      "dates": "July 2022 - March 2023"
     },
     {
       "job_title": "AI/ML Engineer - NLP",

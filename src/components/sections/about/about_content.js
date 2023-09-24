@@ -29,13 +29,7 @@ const AboutContent = () => {
             <br />
           </div>
           <div className="col">
-            <a
-              href={data["resume_path"]}
-              className="btn btn-primary"
-              role="button"
-            >
-              Resume
-            </a>
+            
           </div>
         </div>
       </div>
